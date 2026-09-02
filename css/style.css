@@ -1351,8 +1351,9 @@ body {
 .footer-marca img {
 
     width: 220px;
-
     height: auto;
+
+    display: block;
 
 }
 
