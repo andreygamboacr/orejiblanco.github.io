@@ -102,7 +102,6 @@
    ========================================================= */
 
 :root {
-
     --dorado: #8F6F3B;
     --amarillo: #E6B040;
     --negro: #231F20;
@@ -110,7 +109,6 @@
 
     --crema: #F3F0E9;
     --blanco: #FFFFFF;
-
 }
 
 
@@ -134,6 +132,11 @@ body {
     color: var(--blanco);
     line-height: 1.5;
     overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
 }
 
 
@@ -191,6 +194,67 @@ body {
 
 
 /* =========================================================
+   SELECTOR DE IDIOMA
+   ========================================================= */
+
+.language-selector {
+    position: absolute;
+
+    top: 28px;
+    right: 40px;
+
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+}
+
+.language-selector button {
+    padding: 4px 2px;
+
+    border: none;
+    background: transparent;
+
+    color: var(--blanco);
+
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    opacity: 0.55;
+
+    transition:
+        opacity 0.3s ease,
+        color 0.3s ease;
+}
+
+.language-selector button:hover {
+    opacity: 1;
+}
+
+.language-selector button.active {
+    color: var(--amarillo);
+    opacity: 1;
+}
+
+.language-selector span {
+    color: var(--blanco);
+    opacity: 0.4;
+}
+
+
+/* =========================================================
    CONTENIDO DEL HERO
    ========================================================= */
 
@@ -236,56 +300,14 @@ body {
     margin-bottom: 50px;
 
     font-size: clamp(1rem, 2vw, 1.4rem);
+
     font-weight: 300;
 
     letter-spacing: 2px;
+
     line-height: 1.5;
 }
 
-/* =========================================================
-   SELECTOR DE IDIOMA
-   ========================================================= */
-
-.language-selector {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    z-index: 10;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    font-size: 13px;
-    letter-spacing: 1.5px;
-}
-
-.language-selector button {
-    background: none;
-    border: none;
-    padding: 4px 2px;
-
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-
-    cursor: pointer;
-    opacity: 0.65;
-
-    transition: opacity 0.3s ease;
-}
-
-.language-selector button:hover,
-.language-selector button.active {
-    opacity: 1;
-}
-
-.language-selector span {
-    color: #ffffff;
-    opacity: 0.5;
-}
 
 /* =========================================================
    BOTÓN / INDICADOR DE SCROLL
@@ -293,6 +315,7 @@ body {
 
 .scroll-button {
     display: flex;
+
     flex-direction: column;
     align-items: center;
 
@@ -303,6 +326,7 @@ body {
     text-decoration: none;
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -314,12 +338,15 @@ body {
 
 .scroll-button span {
     font-size: 1.8rem;
+
     font-weight: 300;
+
     line-height: 1;
 }
 
 .scroll-button:hover {
     color: var(--blanco);
+
     transform: translateY(6px);
 }
 
@@ -332,9 +359,11 @@ body {
     min-height: 100vh;
 
     display: grid;
+
     grid-template-columns: 0.85fr 1.15fr;
 
     background-color: var(--crema);
+
     color: var(--negro);
 }
 
@@ -347,7 +376,9 @@ body {
     padding: 100px 10%;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 }
 
@@ -366,6 +397,7 @@ body {
     color: var(--amarillo);
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -380,6 +412,7 @@ body {
     margin-bottom: 35px;
 
     font-size: clamp(3rem, 6vw, 5.5rem);
+
     font-weight: 900;
 
     line-height: 0.9;
@@ -398,6 +431,7 @@ body {
     margin-bottom: 30px;
 
     font-size: 1.35rem;
+
     font-weight: 700;
 
     line-height: 1.4;
@@ -416,6 +450,7 @@ body {
     margin-bottom: 18px;
 
     font-size: 1rem;
+
     font-weight: 400;
 
     line-height: 1.7;
@@ -428,11 +463,13 @@ body {
 
 .historia-ubicacion {
     display: flex;
+
     flex-direction: column;
 
     gap: 5px;
 
     margin-top: 25px;
+
     padding-left: 20px;
 
     border-left: 3px solid var(--amarillo);
@@ -442,11 +479,13 @@ body {
     color: var(--verde);
 
     font-size: 1.2rem;
+
     font-weight: 700;
 }
 
 .historia-ubicacion span {
     font-size: 0.9rem;
+
     font-weight: 400;
 }
 
@@ -464,10 +503,13 @@ body {
 }
 
 .historia-imagen img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+
+    display: block;
 
     object-fit: cover;
+
     object-position: center;
 }
 
@@ -483,6 +525,7 @@ body {
     bottom: 10%;
 
     width: 90%;
+
     max-width: 430px;
 
     padding: 10px;
@@ -498,6 +541,7 @@ body {
     font-family: 'VerandahReverie', cursive;
 
     font-size: clamp(1.5rem, 3.5vw, 3.2rem);
+
     font-weight: 400;
 
     line-height: 1;
@@ -506,6 +550,138 @@ body {
 
     text-shadow:
         0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================================
+   SECCIÓN — QUIÉNES SOMOS
+   ========================================================= */
+
+.quienes-somos {
+    background-color: var(--verde);
+
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.quienes-somos-texto {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 110px 8% 120px;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.quienes-somos h2 {
+    margin-bottom: 45px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.quienes-somos-contenido {
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+.quienes-somos-contenido p {
+    margin-bottom: 22px;
+}
+
+.quienes-somos-contenido strong {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FOTOGRAFÍA INTEGRADA EN EL TEXTO
+   ========================================================= */
+
+.quienes-somos-foto {
+    float: right;
+
+    width: 38%;
+
+    margin: 5px 0 30px 45px;
+}
+
+.quienes-somos-foto img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   INTRODUCCIÓN
+   ========================================================= */
+
+.quienes-somos-intro {
+    margin-bottom: 30px !important;
+
+    font-size: 1.25rem !important;
+
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   SUBTÍTULOS
+   ========================================================= */
+
+.quienes-somos h3 {
+    clear: both;
+
+    margin-top: 55px;
+
+    margin-bottom: 25px;
+
+    font-size: clamp(2rem, 3.5vw, 3rem);
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    color: var(--amarillo);
+}
+
+
+/* =========================================================
+   CIERRE
+   ========================================================= */
+
+.quienes-somos-cierre {
+    clear: both;
+
+    margin-top: 35px;
+
+    padding-left: 20px;
+
+    border-left: 3px solid var(--amarillo);
 }
 
 
@@ -519,6 +695,7 @@ body {
     padding: 120px 10%;
 
     background-color: var(--crema);
+
     color: var(--negro);
 }
 
@@ -541,6 +718,7 @@ body {
     margin-bottom: 35px;
 
     font-size: clamp(2.8rem, 6vw, 5.5rem);
+
     font-weight: 900;
 
     line-height: 0.95;
@@ -550,6 +728,7 @@ body {
     max-width: 620px;
 
     font-size: 1.1rem;
+
     font-weight: 300;
 
     line-height: 1.8;
@@ -583,11 +762,13 @@ body {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 }
 
 .cafe-imagen img {
     width: 100%;
+
     max-width: 260px;
 
     height: auto;
@@ -610,6 +791,7 @@ body {
     color: var(--dorado);
 
     font-size: 0.75rem;
+
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -619,6 +801,7 @@ body {
     margin-bottom: 25px;
 
     font-size: clamp(2rem, 4vw, 3.5rem);
+
     font-weight: 900;
 
     line-height: 1;
@@ -628,6 +811,7 @@ body {
     margin-bottom: 35px;
 
     font-size: 1.05rem;
+
     font-weight: 300;
 
     line-height: 1.8;
@@ -658,11 +842,13 @@ body {
 
 .presentacion span {
     font-size: 0.9rem;
+
     font-weight: 700;
 }
 
 .presentacion:hover {
     background-color: var(--verde);
+
     color: var(--blanco);
 }
 
@@ -699,23 +885,29 @@ body {
 }
 
 
-/* Botón correo */
+/* =========================================================
+   BOTÓN CORREO
+   ========================================================= */
 
 .botones-contacto .boton-contacto {
     min-height: 54px;
 
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
     padding: 15px 30px;
 
     background-color: var(--verde);
+
     color: var(--blanco);
 
     text-decoration: none;
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -726,13 +918,17 @@ body {
 }
 
 
-/* Botón WhatsApp */
+/* =========================================================
+   BOTÓN WHATSAPP
+   ========================================================= */
 
 .botones-contacto .boton-whatsapp {
     min-height: 54px;
 
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 12px;
@@ -740,6 +936,7 @@ body {
     padding: 15px 25px;
 
     background-color: var(--verde);
+
     color: var(--blanco);
 
     text-decoration: none;
@@ -747,6 +944,7 @@ body {
     font-family: 'Lato', sans-serif;
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 1.5px;
@@ -759,7 +957,9 @@ body {
 }
 
 
-/* Icono WhatsApp */
+/* =========================================================
+   ICONO WHATSAPP
+   ========================================================= */
 
 .boton-whatsapp img {
     width: 22px;
@@ -769,11 +969,14 @@ body {
 }
 
 
-/* Hover botones */
+/* =========================================================
+   HOVER BOTONES
+   ========================================================= */
 
 .botones-contacto .boton-contacto:hover,
 .botones-contacto .boton-whatsapp:hover {
     background-color: var(--dorado);
+
     color: var(--blanco);
 
     transform: translateY(-3px);
@@ -788,6 +991,7 @@ body {
     padding: 70px 10% 25px;
 
     background-color: var(--negro);
+
     color: var(--blanco);
 }
 
@@ -800,6 +1004,7 @@ body {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
     gap: 50px;
@@ -818,6 +1023,7 @@ body {
 
 .footer-marca {
     display: flex;
+
     flex-direction: column;
 
     gap: 15px;
@@ -825,6 +1031,7 @@ body {
 
 .footer-marca img {
     width: 220px;
+
     height: auto;
 
     display: block;
@@ -836,6 +1043,7 @@ body {
     font-size: 0.8rem;
 
     letter-spacing: 2px;
+
     font-weight: 400;
 }
 
@@ -846,6 +1054,7 @@ body {
 
 .footer-contacto {
     display: flex;
+
     flex-direction: column;
 
     align-items: flex-end;
@@ -857,6 +1066,7 @@ body {
     color: var(--amarillo);
 
     font-size: 0.75rem;
+
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -877,10 +1087,13 @@ body {
 
 .footer-redes a {
     width: 42px;
+
     height: 42px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border: 1px solid rgba(230, 176, 64, 0.5);
@@ -893,6 +1106,7 @@ body {
 
 .footer-redes img {
     width: 20px;
+
     height: 20px;
 
     display: block;
@@ -921,6 +1135,7 @@ body {
     text-decoration: none;
 
     font-size: 0.9rem;
+
     font-weight: 400;
 
     transition: color 0.3s ease;
@@ -951,6 +1166,7 @@ body {
     color: rgba(255, 255, 255, 0.55);
 
     font-size: 0.75rem;
+
     font-weight: 300;
 }
 
@@ -969,8 +1185,9 @@ body {
         width: min(380px, 70vw);
     }
 
-    .finca {
-        padding: 100px 8%;
+    .language-selector {
+        top: 25px;
+        right: 30px;
     }
 
     .historia-texto {
@@ -983,9 +1200,19 @@ body {
 
     .footer {
         padding-left: 8%;
+
         padding-right: 8%;
     }
 
+    .quienes-somos-texto {
+        padding: 90px 8% 100px;
+    }
+
+    .quienes-somos-foto {
+        width: 40%;
+
+        margin-left: 35px;
+    }
 }
 
 
@@ -996,11 +1223,29 @@ body {
 @media (max-width: 768px) {
 
     /* -----------------------------------------
+       SELECTOR DE IDIOMA
+    ----------------------------------------- */
+
+    .language-selector {
+        top: 20px;
+
+        right: 20px;
+
+        font-size: 12px;
+    }
+
+    .language-selector button {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------
        HERO
     ----------------------------------------- */
 
     .hero {
         height: 100svh;
+
         min-height: 550px;
     }
 
@@ -1033,6 +1278,7 @@ body {
 
     .historia {
         display: flex;
+
         flex-direction: column;
     }
 
@@ -1053,22 +1299,50 @@ body {
     }
 
     .historia-imagen img {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+
+        height: 100%;
 
         object-position: center center;
     }
 
     .historia-frase {
         right: 7%;
+
         bottom: 5%;
 
         width: 90%;
+
         max-width: none;
     }
 
     .historia-frase p {
         font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+
+    /* -----------------------------------------
+       QUIÉNES SOMOS
+    ----------------------------------------- */
+
+    .quienes-somos-texto {
+        padding: 80px 8% 90px;
+    }
+
+    .quienes-somos h2 {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .quienes-somos-foto {
+        float: none;
+
+        width: 75%;
+
+        margin: 0 auto 35px;
+    }
+
+    .quienes-somos-intro {
+        font-size: 1.15rem !important;
     }
 
 
@@ -1176,7 +1450,6 @@ body {
     .botones-contacto .boton-whatsapp {
         width: 100%;
     }
-
 }
 
 
@@ -1185,6 +1458,12 @@ body {
    ========================================================= */
 
 @media (max-width: 480px) {
+
+    .language-selector {
+        top: 18px;
+
+        right: 18px;
+    }
 
     .hero-content {
         padding: 20px;
@@ -1200,200 +1479,23 @@ body {
 
     .historia-texto {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
     .cafe {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
-}
-/* =========================================================
-   SECCIÓN — QUIÉNES SOMOS
-   ========================================================= */
-
-.quienes-somos {
-    background-color: var(--verde);
-    color: var(--blanco);
-}
-
-
-/* =========================================================
-   CONTENIDO
-   ========================================================= */
-
-.quienes-somos-texto {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    padding: 110px 8% 120px;
-}
-
-
-/* =========================================================
-   TÍTULO
-   ========================================================= */
-
-.quienes-somos h2 {
-    margin-bottom: 45px;
-
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    font-weight: 900;
-
-    line-height: 0.9;
-
-    color: var(--blanco);
-}
-
-
-/* =========================================================
-   TEXTO
-   ========================================================= */
-
-.quienes-somos-contenido {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.quienes-somos-contenido p {
-    margin-bottom: 22px;
-}
-
-.quienes-somos-contenido strong {
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   FOTOGRAFÍA INTEGRADA EN EL TEXTO
-   ========================================================= */
-
-.quienes-somos-foto {
-    float: right;
-
-    width: 38%;
-
-    margin: 5px 0 30px 45px;
-}
-
-.quienes-somos-foto img {
-    display: block;
-
-    width: 100%;
-    height: auto;
-
-    border-radius: 2px;
-}
-
-
-/* =========================================================
-   INTRODUCCIÓN
-   ========================================================= */
-
-.quienes-somos-intro {
-    margin-bottom: 30px !important;
-
-    font-size: 1.25rem !important;
-    line-height: 1.6 !important;
-}
-
-
-/* =========================================================
-   SUBTÍTULOS
-   ========================================================= */
-
-.quienes-somos h3 {
-    clear: both;
-
-    margin-top: 55px;
-    margin-bottom: 25px;
-
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 900;
-
-    line-height: 1;
-
-    color: var(--amarillo);
-}
-
-
-/* =========================================================
-   CIERRE
-   ========================================================= */
-
-.quienes-somos-cierre {
-    clear: both;
-
-    margin-top: 35px;
-
-    padding-left: 20px;
-
-    border-left: 3px solid var(--amarillo);
-}
-
-
-/* =========================================================
-   RESPONSIVE — TABLET
-   ========================================================= */
-
-@media (max-width: 1024px) {
-
-    .quienes-somos-texto {
-        padding: 90px 8% 100px;
-    }
-
-    .quienes-somos-foto {
-        width: 40%;
-
-        margin-left: 35px;
-    }
-
-}
-
-
-/* =========================================================
-   RESPONSIVE — CELULAR
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .quienes-somos-texto {
-        padding: 80px 8% 90px;
-    }
-
-    .quienes-somos h2 {
-        font-size: clamp(3rem, 15vw, 5rem);
-    }
-
-    .quienes-somos-foto {
-        float: none;
-
-        width: 75%;
-
-        margin: 0 auto 35px;
-    }
-
-    .quienes-somos-intro {
-        font-size: 1.15rem !important;
-    }
-
-}
-
-
-/* =========================================================
-   RESPONSIVE — CELULARES PEQUEÑOS
-   ========================================================= */
-
-@media (max-width: 480px) {
-
     .quienes-somos-texto {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
     .quienes-somos-foto {
         width: 100%;
     }
-
 }
