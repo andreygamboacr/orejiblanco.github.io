@@ -26,47 +26,49 @@
          HERO
     ========================================= -->
 
-    <main class="hero">
+   <main class="hero">
 
-        <!-- Video de fondo -->
-        <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline
+    <!-- Video de fondo -->
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="media/video/finca.mp4" type="video/mp4">
+    </video>
+
+    <!-- Capa sobre el video -->
+    <div class="hero-overlay"></div>
+
+    <!-- Selector de idioma -->
+    <div class="language-selector">
+        <button type="button" data-language="es">ES</button>
+        <span>/</span>
+        <button type="button" data-language="en">EN</button>
+    </div>
+
+    <!-- Contenido -->
+    <div class="hero-content">
+
+        <img
+            src="media/logo/Orejiblanco-logo-Blanco.svg"
+            alt="Orejiblanco Café"
+            class="hero-logo"
         >
-            <source src="media/video/finca.mp4" type="video/mp4">
-        </video>
 
-        <!-- Capa sobre el video -->
-        <div class="hero-overlay"></div>
+        <p class="hero-tagline" data-i18n="heroTagline">
+            Café que nace de la tierra que cuidamos.
+        </p>
 
-        <!-- Contenido -->
-        <div class="language-selector">
-            <button type="button" data-language="es">ES</button>
-            <span>/</span>
-            <button type="button" data-language="en">EN</button>
-         </div>
-        <div class="hero-content">
+        <a href="#historia" class="scroll-button" data-i18n="discover">
+            CONOZCA NUESTRA FINCA <span>↓</span>
+        </a>
 
-           <img
-                src="media/logo/Orejiblanco-logo-Blanco.svg"
-                alt="Orejiblanco Café"
-                class="hero-logo"
-            >
+    </div>
 
-            <p class="hero-tagline" data-i18n="heroTagline">
-                Café que nace de la tierra que cuidamos.
-            </p>
-
-            <a href="#historia" class="scroll-button" data-i18n="discover">
-                 CONOZCA NUESTRA FINCA <span>↓</span>
-            </a>
-
-        </div>
-
-    </main>
+</main>
 
 
     <!-- =========================================
