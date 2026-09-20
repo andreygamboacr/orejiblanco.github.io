@@ -2,30 +2,66 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Orejiblanco | Café de Costa Rica</title>
+  <title>Orejiblanco | Café de Costa Rica cultivado en Heredia</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="description"
+    content="Orejiblanco es una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde cultivamos café cuidando el suelo, la biodiversidad y cada etapa del proceso."
+  >
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-        rel="stylesheet"
-    >
+  <link rel="canonical" href="https://orejiblanco.com/">
 
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orejiblanco">
+  <meta property="og:title" content="Orejiblanco | Café de Costa Rica">
+  <meta
+    property="og:description"
+    content="Una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde el café nace de la tierra que cuidamos."
+  >
+  <meta property="og:url" content="https://orejiblanco.com/">
+  <meta property="og:image" content="https://orejiblanco.com/media/images/CEO.png">
+  <meta property="og:image:alt" content="Orejiblanco — Café de Costa Rica">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orejiblanco | Café de Costa Rica">
+  <meta
+    name="twitter:description"
+    content="Café cultivado en tierras heredianas, desde una finca familiar en Santa Bárbara de Heredia, Costa Rica."
+  >
+  <meta name="twitter:image" content="https://orejiblanco.com/media/images/CEO.png">
+  <meta name="twitter:image:alt" content="Orejiblanco — Café de Costa Rica">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="media/logo/Orejiblanco-logo-Blanco.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
+    <!-- =========================================
          HERO
-         ===================================================== -->
+    ========================================= -->
 
     <main class="hero">
 
+        <!-- Video de fondo -->
         <video
             class="hero-video"
             autoplay
@@ -36,34 +72,17 @@
             <source src="media/video/finca.mp4" type="video/mp4">
         </video>
 
+        <!-- Capa sobre el video -->
         <div class="hero-overlay"></div>
 
-        <!-- SELECTOR DE IDIOMA -->
+        <!-- Contenido -->
+        <div class="hero-content">
 
         <div class="language-selector">
-
-            <button
-                type="button"
-                data-language="es"
-            >
-                ES
-            </button>
-
+            <button type="button" data-language="es">ES</button>
             <span>/</span>
-
-            <button
-                type="button"
-                data-language="en"
-            >
-                EN
-            </button>
-
-        </div>
-
-
-        <!-- CONTENIDO HERO -->
-
-        <div class="hero-content">
+            <button type="button" data-language="en">EN</button>
+         </div>
 
             <img
                 src="media/logo/Orejiblanco-logo-Blanco.svg"
@@ -71,19 +90,12 @@
                 class="hero-logo"
             >
 
-            <p
-                class="hero-tagline"
-                data-i18n="tagline"
-            >
+            <p class="hero-tagline" data-i18n="heroTagline">
                 Café que nace de la tierra que cuidamos.
             </p>
 
-            <a
-                href="#historia"
-                class="scroll-button"
-                data-i18n="discover"
-            >
-                CONOZCA NUESTRA FINCA <span>↓</span>
+            <a href="#historia" class="scroll-button" data-i18n="discover">
+                 CONOZCA NUESTRA FINCA <span>↓</span>
             </a>
 
         </div>
@@ -91,60 +103,48 @@
     </main>
 
 
-    <!-- =====================================================
+    <!-- =========================================
          NUESTRA HISTORIA
-         ===================================================== -->
+    ========================================= -->
 
-    <section
-        id="historia"
-        class="historia"
-    >
+    <section id="historia" class="historia">
 
         <div class="historia-texto">
 
-            <p
-                class="section-label"
-                data-i18n="historyLabel"
-            >
+            <p class="section-label">
                 OREJIBLANCO
             </p>
 
-
-            <h2 data-i18n="historyTitle">
+            <h2>
                 Nuestra<br>
                 historia
             </h2>
 
-
-            <p
-                class="historia-intro"
-                data-i18n="historyIntro"
-            >
+            <p class="historia-intro">
                 Una historia que comenzó hace generaciones
                 y continúa hoy.
             </p>
 
-
             <div class="historia-contenido">
 
-                <p data-i18n="history1">
+                <p>
                     Orejiblanco es el resultado del trabajo y la
                     dedicación de nuestra familia, arraigada en
                     San Bosco de Santa Bárbara de Heredia.
                 </p>
 
-                <p data-i18n="history2">
+                <p>
                     Desde hace generaciones cultivamos café con
                     respeto por la tierra y por las personas.
                 </p>
 
-                <p data-i18n="history3">
+                <p>
                     Con el tiempo hemos aprendido que el mejor café
                     nace cuando cuidamos el suelo, la biodiversidad
                     y cada detalle del proceso.
                 </p>
 
-                <p data-i18n="history4">
+                <p>
                     Hoy, Orejiblanco representa nuestro compromiso
                     con la calidad, la sostenibilidad y con las
                     futuras generaciones.
@@ -152,14 +152,13 @@
 
             </div>
 
-
             <div class="historia-ubicacion">
 
                 <strong>
                     1.325 m s. n. m.
                 </strong>
 
-                <span data-i18n="location">
+                <span>
                     San Bosco, Santa Bárbara de Heredia · Costa Rica
                 </span>
 
@@ -173,13 +172,11 @@
             <img
                 src="media/images/historia-cosecha.png"
                 alt="Familia trabajando en la cosecha de café en Orejiblanco"
-                data-i18n-alt="historyImageAlt"
             >
-
 
             <div class="historia-frase">
 
-                <p data-i18n="phrase">
+                <p>
                     El café nos ha dado raíces,<br>
                     la tierra nos ha dado todo.
                 </p>
@@ -190,54 +187,36 @@
 
     </section>
 
-
-    <!-- =====================================================
+        <!-- =========================================
          QUIÉNES SOMOS
-         ===================================================== -->
+    ========================================= -->
 
-    <section
-        id="quienes-somos"
-        class="quienes-somos"
-    >
+    <section id="quienes-somos" class="quienes-somos">
 
         <div class="quienes-somos-texto">
 
-            <p
-                class="section-label"
-                data-i18n="aboutLabel"
-            >
+            <p class="section-label">
                 OREJIBLANCO
             </p>
 
-
-            <h2 data-i18n="aboutTitle">
+            <h2>
                 Quiénes<br>
                 somos
             </h2>
 
-
             <div class="quienes-somos-contenido">
 
-
-                <!-- FOTO -->
-
+                <!-- Fotografía integrada en el texto -->
                 <figure class="quienes-somos-foto">
 
                     <img
                         src="media/images/quienes-somos.jpg"
                         alt="Café en fruta durante la cosecha en Orejiblanco"
-                        data-i18n-alt="aboutImageAlt"
                     >
 
                 </figure>
 
-
-                <!-- INTRODUCCIÓN -->
-
-                <p
-                    class="quienes-somos-intro"
-                    data-i18n="aboutIntro"
-                >
+                <p class="quienes-somos-intro">
                     <strong>
                         Orejiblanco es una finca cafetalera familiar ubicada
                         en las tierras altas de Heredia, Costa Rica, donde
@@ -246,55 +225,35 @@
                     </strong>
                 </p>
 
-
-                <!-- PÁRRAFO 1 -->
-
-                <p data-i18n="about1">
+                <p>
                     Nuestro trabajo parte de una convicción:
-                    <strong>
-                        la calidad del café comienza en la salud del suelo.
-                    </strong>
+                    <strong>la calidad del café comienza en la salud del suelo.</strong>
                     Por eso hemos venido desarrollando prácticas orientadas
                     a su regeneración y al equilibrio natural de la finca.
-                    Mantenemos una política de
-                    <strong>cero herbicidas</strong>,
+                    Mantenemos una política de <strong>cero herbicidas</strong>,
                     aprovechando coberturas vegetales, residuos de poda y
                     otros materiales orgánicos para proteger y enriquecer
                     el suelo.
                 </p>
 
-
-                <!-- PÁRRAFO 2 -->
-
-                <p data-i18n="about2">
-                    Contamos con el
-                    <strong>
-                        Galardón Bandera Azul Ecológica
-                    </strong>,
+                <p>
+                    Contamos con el <strong>Galardón Bandera Azul Ecológica</strong>,
                     un reconocimiento que refleja nuestro compromiso con
                     la protección del ambiente y con la implementación de
                     buenas prácticas dentro de nuestra finca.
                 </p>
 
-
-                <!-- PÁRRAFO 3 -->
-
-                <p data-i18n="about3">
+                <p>
                     En nuestra finca también elaboramos y utilizamos
-                    <strong>
-                        bioinsumos y enmiendas
-                    </strong>,
-                    incorporamos fertilizantes de origen orgánico y buscamos
-                    alternativas de manejo que permitan reducir
-                    progresivamente la carga de insumos químicos.
-                    Para el control de plagas y enfermedades priorizamos
-                    métodos de manejo orgánico y preventivo.
+                    <strong>bioinsumos y enmiendas</strong>, incorporamos
+                    fertilizantes de origen orgánico y buscamos alternativas
+                    de manejo que permitan reducir progresivamente la carga
+                    de insumos químicos. Para el control de plagas y
+                    enfermedades priorizamos métodos de manejo orgánico y
+                    preventivo.
                 </p>
 
-
-                <!-- PÁRRAFO 4 -->
-
-                <p data-i18n="about4">
+                <p>
                     Al mismo tiempo, entendemos que algunos insumos
                     convencionales pueden ser un complemento necesario para
                     asegurar una producción estable y saludable cuando las
@@ -306,98 +265,60 @@
                     </strong>
                 </p>
 
-
-                <!-- CALIDAD -->
-
-                <h3 data-i18n="qualityTitle">
+                <h3>
                     Calidad que<br>
                     nace del cuidado
                 </h3>
 
-
-                <!-- PÁRRAFO 5 -->
-
-                <p data-i18n="about5">
+                <p>
                     Nuestro café ha encontrado una buena aceptación y
                     actualmente nuestra producción forma parte del
-                    <strong>
-                        Programa Nespresso AAA Sustainable Quality™
-                    </strong>,
-                    desarrollado en colaboración con
-                    <strong>Rainforest Alliance</strong>
+                    <strong>Programa Nespresso AAA Sustainable Quality™</strong>,
+                    desarrollado en colaboración con <strong>Rainforest Alliance</strong>
                     y a través de <strong>Volcafe</strong>, empresa a la que
                     entregamos nuestro café en fruta.
                 </p>
 
-
-                <!-- PÁRRAFO 6 -->
-
-                <p data-i18n="about6">
+                <p>
                     Esta relación nos ha permitido acceder a
-                    <strong>
-                        capacitaciones, asistencia técnica, incentivos
-                        y acompañamiento en campo
-                    </strong>,
-                    que contribuyen a mejorar nuestras prácticas agrícolas,
-                    la calidad del café y la sostenibilidad de nuestra
-                    producción.
+                    <strong>capacitaciones, asistencia técnica, incentivos
+                    y acompañamiento en campo</strong>, que contribuyen a
+                    mejorar nuestras prácticas agrícolas, la calidad del café
+                    y la sostenibilidad de nuestra producción.
                 </p>
 
-
-                <!-- PÁRRAFO 7 -->
-
-                <p data-i18n="about7">
+                <p>
                     Pero para nosotros la sostenibilidad también significa
-                    <strong>
-                        cuidar a las personas.
-                    </strong>
-                    Durante la cosecha procuramos brindar un trato respetuoso
-                    y digno a quienes nos ayudan en la recolección del café,
-                    reconociendo que detrás de cada grano existe el trabajo
-                    de muchas personas que hacen posible llevarlo de nuestra
-                    finca a la taza.
+                    <strong>cuidar a las personas.</strong> Durante la cosecha
+                    procuramos brindar un trato respetuoso y digno a quienes
+                    nos ayudan en la recolección del café, reconociendo que
+                    detrás de cada grano existe el trabajo de muchas personas
+                    que hacen posible llevarlo de nuestra finca a la taza.
                 </p>
 
-
-                <!-- APRENDER -->
-
-                <h3 data-i18n="learningTitle">
+                <h3>
                     Aprender, compartir<br>
                     y seguir mejorando
                 </h3>
 
-
-                <!-- PÁRRAFO 8 -->
-
-                <p data-i18n="about8">
+                <p>
                     El desarrollo de Orejiblanco también ha sido posible
                     gracias al conocimiento compartido. Agradecemos
                     especialmente el acompañamiento y las oportunidades de
                     aprendizaje que hemos recibido de instituciones como el
-                    <strong>
-                        Ministerio de Agricultura y Ganadería (MAG),
-                        ICAFE, INA y UNA
-                    </strong>,
-                    así como de amigos, colegas y otros productores.
+                    <strong>Ministerio de Agricultura y Ganadería (MAG),
+                    ICAFE, INA y UNA</strong>, así como de amigos, colegas
+                    y otros productores.
                 </p>
 
-
-                <!-- PÁRRAFO 9 -->
-
-                <p data-i18n="about9">
+                <p>
                     Las capacitaciones, talleres, asistencia técnica,
                     trabajos de campo e intercambio de experiencias nos han
                     permitido experimentar, aprender y encontrar nuevas
                     formas de trabajar nuestra finca.
                 </p>
 
-
-                <!-- CIERRE -->
-
-                <p
-                    class="quienes-somos-cierre"
-                    data-i18n="aboutClosing"
-                >
+                <p class="quienes-somos-cierre">
                     <strong>
                         En Orejiblanco seguimos aprendiendo de la tierra,
                         de las personas y de quienes comparten nuestro
@@ -411,33 +332,24 @@
 
     </section>
 
-
-    <!-- =====================================================
+    <!-- =========================================
          NUESTRO CAFÉ
-         ===================================================== -->
+    ========================================= -->
 
-    <section
-        id="cafe"
-        class="cafe"
-    >
+    <section id="cafe" class="cafe">
 
         <div class="cafe-header">
 
-            <p
-                class="section-label"
-                data-i18n="coffeeLabel"
-            >
+            <p class="section-label">
                 OREJIBLANCO
             </p>
 
-
-            <h2 data-i18n="coffeeTitle">
+            <h2>
                 Café para<br>
                 disfrutar en casa.
             </h2>
 
-
-            <p data-i18n="coffeeIntro">
+            <p>
                 Nuestro café nace en las montañas de Santa Bárbara
                 de Heredia, donde cultivamos y cuidamos cada detalle
                 desde la finca hasta la taza.
@@ -448,48 +360,35 @@
 
         <div class="cafe-producto">
 
-
-            <!-- IMAGEN DEL CAFÉ -->
-
+            <!-- Fotografía de la bolsa -->
             <div class="cafe-imagen">
 
                 <img
                     src="media/images/bolsa_cafe.png"
                     alt="Café Orejiblanco"
-                    data-i18n-alt="coffeeImageAlt"
                 >
 
             </div>
 
 
-            <!-- INFORMACIÓN DEL PRODUCTO -->
-
+            <!-- Información del producto -->
             <div class="cafe-info">
 
-                <p
-                    class="producto-label"
-                    data-i18n="productLabel"
-                >
+                <p class="producto-label">
                     CAFÉ OREJIBLANCO
                 </p>
 
-
-                <h3 data-i18n="productTitle">
+                <h3>
                     Nuestro café
                 </h3>
 
-
-                <p
-                    class="producto-descripcion"
-                    data-i18n="productDescription"
-                >
+                <p class="producto-descripcion">
                     Disponible en tres presentaciones para disfrutar
                     Orejiblanco en casa, regalar o compartir.
                 </p>
 
 
-                <!-- PRESENTACIONES -->
-
+                <!-- Presentaciones -->
                 <div class="presentaciones">
 
                     <div class="presentacion">
@@ -507,25 +406,21 @@
                 </div>
 
 
-                <!-- BOTONES -->
-
+                <!-- Contacto -->
                 <div class="botones-contacto">
 
                     <a
                         href="mailto:orejiblanco@gmail.com"
                         class="boton-contacto"
-                        data-i18n="emailButton"
                     >
                         ESCRÍBANOS
                     </a>
-
 
                     <a
                         href="https://wa.me/50687050902?text=Hola%2C%20me%20interesa%20comprar%20caf%C3%A9%20Orejiblanco."
                         class="boton-whatsapp"
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-i18n="whatsappButton"
                     >
 
                         <img
@@ -548,17 +443,15 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =========================================
          FOOTER
-         ===================================================== -->
+    ========================================= -->
 
     <footer class="footer">
 
         <div class="footer-contenido">
 
-
-            <!-- MARCA -->
-
+            <!-- Marca -->
             <div class="footer-marca">
 
                 <img
@@ -566,29 +459,25 @@
                     alt="Orejiblanco Café"
                 >
 
-                <p data-i18n="footerTagline">
+                <p>
                     Café de Costa Rica
                 </p>
 
             </div>
 
 
-            <!-- CONTACTO -->
-
+            <!-- Contacto -->
             <div class="footer-contacto">
 
-                <p
-                    class="footer-titulo"
-                    data-i18n="connect"
-                >
+                <p class="footer-titulo">
                     CONECTEMOS
                 </p>
 
 
-                <!-- REDES -->
-
+                <!-- Redes sociales -->
                 <div class="footer-redes">
 
+                    <!-- Instagram -->
                     <a
                         href="https://instagram.com/orejiblanco"
                         target="_blank"
@@ -604,6 +493,7 @@
                     </a>
 
 
+                    <!-- LinkedIn -->
                     <a
                         href="https://cr.linkedin.com/company/orejiblanco"
                         target="_blank"
@@ -619,6 +509,7 @@
                     </a>
 
 
+                    <!-- WhatsApp -->
                     <a
                         href="https://wa.me/50687050902"
                         target="_blank"
@@ -636,8 +527,7 @@
                 </div>
 
 
-                <!-- EMAIL -->
-
+                <!-- Correo -->
                 <div class="footer-email">
 
                     <a href="mailto:orejiblanco@gmail.com">
@@ -651,11 +541,10 @@
         </div>
 
 
-        <!-- COPYRIGHT -->
-
+        <!-- Copyright -->
         <div class="footer-bottom">
 
-            <p data-i18n="footerCopyright">
+            <p>
                 © 2026 Orejiblanco · Café de Costa Rica
             </p>
 
@@ -664,10 +553,7 @@
     </footer>
 
 
-    <!-- =====================================================
-         JAVASCRIPT
-         ===================================================== -->
-
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
