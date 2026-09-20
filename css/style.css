@@ -1165,58 +1165,25 @@ body {
     }
 
 }
-
 /* =========================================================
    SECCIÓN — QUIÉNES SOMOS
    ========================================================= */
 
 .quienes-somos {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
     background-color: var(--verde);
     color: var(--blanco);
 }
 
 
 /* =========================================================
-   FOTOGRAFÍA
-   ========================================================= */
-
-.quienes-somos-imagen {
-    min-height: 100%;
-
-    overflow: hidden;
-}
-
-.quienes-somos-imagen img {
-    width: 100%;
-    height: 100%;
-
-    min-height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-    
-    display: block;
-}
-
-
-/* =========================================================
-   TEXTO
+   CONTENIDO
    ========================================================= */
 
 .quienes-somos-texto {
-    padding: 110px 10% 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.quienes-somos-texto .section-label {
-    color: var(--amarillo);
+    padding: 110px 8% 120px;
 }
 
 
@@ -1237,24 +1204,42 @@ body {
 
 
 /* =========================================================
-   CONTENIDO
+   TEXTO
    ========================================================= */
 
 .quienes-somos-contenido {
-    max-width: 650px;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 .quienes-somos-contenido p {
     margin-bottom: 22px;
-
-    font-size: 1rem;
-    font-weight: 400;
-
-    line-height: 1.8;
 }
 
 .quienes-somos-contenido strong {
     font-weight: 700;
+}
+
+
+/* =========================================================
+   FOTOGRAFÍA INTEGRADA EN EL TEXTO
+   ========================================================= */
+
+.quienes-somos-foto {
+    float: right;
+
+    width: 38%;
+
+    margin: 5px 0 30px 45px;
+}
+
+.quienes-somos-foto img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 2px;
 }
 
 
@@ -1275,7 +1260,9 @@ body {
    ========================================================= */
 
 .quienes-somos h3 {
-    margin-top: 50px;
+    clear: both;
+
+    margin-top: 55px;
     margin-bottom: 25px;
 
     font-size: clamp(2rem, 3.5vw, 3rem);
@@ -1292,7 +1279,10 @@ body {
    ========================================================= */
 
 .quienes-somos-cierre {
+    clear: both;
+
     margin-top: 35px;
+
     padding-left: 20px;
 
     border-left: 3px solid var(--amarillo);
@@ -1309,6 +1299,12 @@ body {
         padding: 90px 8% 100px;
     }
 
+    .quienes-somos-foto {
+        width: 40%;
+
+        margin-left: 35px;
+    }
+
 }
 
 
@@ -1318,25 +1314,20 @@ body {
 
 @media (max-width: 768px) {
 
-    .quienes-somos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .quienes-somos-imagen {
-        min-height: 55vh;
-    }
-
-    .quienes-somos-imagen img {
-        min-height: 55vh;
-    }
-
     .quienes-somos-texto {
         padding: 80px 8% 90px;
     }
 
     .quienes-somos h2 {
         font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .quienes-somos-foto {
+        float: none;
+
+        width: 75%;
+
+        margin: 0 auto 35px;
     }
 
     .quienes-somos-intro {
@@ -1355,6 +1346,10 @@ body {
     .quienes-somos-texto {
         padding-left: 7%;
         padding-right: 7%;
+    }
+
+    .quienes-somos-foto {
+        width: 100%;
     }
 
 }
