@@ -1165,3 +1165,196 @@ body {
     }
 
 }
+
+/* =========================================================
+   SECCIÓN — QUIÉNES SOMOS
+   ========================================================= */
+
+.quienes-somos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   FOTOGRAFÍA
+   ========================================================= */
+
+.quienes-somos-imagen {
+    min-height: 100%;
+
+    overflow: hidden;
+}
+
+.quienes-somos-imagen img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    
+    display: block;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.quienes-somos-texto {
+    padding: 110px 10% 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quienes-somos-texto .section-label {
+    color: var(--amarillo);
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.quienes-somos h2 {
+    margin-bottom: 45px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.quienes-somos-contenido {
+    max-width: 650px;
+}
+
+.quienes-somos-contenido p {
+    margin-bottom: 22px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+.quienes-somos-contenido strong {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INTRODUCCIÓN
+   ========================================================= */
+
+.quienes-somos-intro {
+    margin-bottom: 30px !important;
+
+    font-size: 1.25rem !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   SUBTÍTULOS
+   ========================================================= */
+
+.quienes-somos h3 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 900;
+
+    line-height: 1;
+
+    color: var(--amarillo);
+}
+
+
+/* =========================================================
+   CIERRE
+   ========================================================= */
+
+.quienes-somos-cierre {
+    margin-top: 35px;
+    padding-left: 20px;
+
+    border-left: 3px solid var(--amarillo);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .quienes-somos-texto {
+        padding: 90px 8% 100px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — CELULAR
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .quienes-somos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quienes-somos-imagen {
+        min-height: 55vh;
+    }
+
+    .quienes-somos-imagen img {
+        min-height: 55vh;
+    }
+
+    .quienes-somos-texto {
+        padding: 80px 8% 90px;
+    }
+
+    .quienes-somos h2 {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .quienes-somos-intro {
+        font-size: 1.15rem !important;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .quienes-somos-texto {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+}
