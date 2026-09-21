@@ -17,7 +17,8 @@ const translations = {
 
     es: {
 
-        title: "Orejiblanco | Café de Costa Rica cultivado en Heredia",
+        title:
+            "Orejiblanco | Café de Costa Rica cultivado en Heredia",
 
         description:
             "Orejiblanco es una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde cultivamos café cuidando el suelo, la biodiversidad y cada etapa del proceso.",
@@ -29,7 +30,9 @@ const translations = {
             "Una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde el café nace de la tierra que cuidamos.",
 
 
-        /* HERO */
+        /* =================================================
+           HERO
+        ================================================== */
 
         tagline:
             "Café que nace de la tierra que cuidamos.",
@@ -37,8 +40,13 @@ const translations = {
         discover:
             "CONOZCA NUESTRA FINCA",
 
+        coffeeCTA:
+            "ADQUIERA NUESTRO CAFÉ",
 
-        /* HISTORIA */
+
+        /* =================================================
+           HISTORIA
+        ================================================== */
 
         historyLabel:
             "OREJIBLANCO",
@@ -74,7 +82,9 @@ const translations = {
             "Familia trabajando en la cosecha de café en Orejiblanco",
 
 
-        /* QUIÉNES SOMOS */
+        /* =================================================
+           QUIÉNES SOMOS
+        ================================================== */
 
         aboutLabel:
             "OREJIBLANCO",
@@ -125,7 +135,9 @@ const translations = {
             "Café en fruta durante la cosecha en Orejiblanco",
 
 
-        /* CAFÉ */
+        /* =================================================
+           CAFÉ
+        ================================================== */
 
         coffeeLabel:
             "OREJIBLANCO",
@@ -155,7 +167,9 @@ const translations = {
             "COMPRAR POR WHATSAPP",
 
 
-        /* FOOTER */
+        /* =================================================
+           FOOTER
+        ================================================== */
 
         footerTagline:
             "Café de Costa Rica",
@@ -188,7 +202,9 @@ const translations = {
             "A family coffee farm in Santa Bárbara de Heredia, Costa Rica, where coffee is born from the land we care for.",
 
 
-        /* HERO */
+        /* =================================================
+           HERO
+        ================================================== */
 
         tagline:
             "Coffee born from the land we care for.",
@@ -196,8 +212,13 @@ const translations = {
         discover:
             "DISCOVER OUR FARM",
 
+        coffeeCTA:
+            "GET OUR COFFEE",
 
-        /* HISTORY */
+
+        /* =================================================
+           HISTORY
+        ================================================== */
 
         historyLabel:
             "OREJIBLANCO",
@@ -233,7 +254,9 @@ const translations = {
             "Family working during the coffee harvest at Orejiblanco",
 
 
-        /* ABOUT */
+        /* =================================================
+           ABOUT
+        ================================================== */
 
         aboutLabel:
             "OREJIBLANCO",
@@ -284,7 +307,9 @@ const translations = {
             "Coffee cherries during the harvest at Orejiblanco",
 
 
-        /* COFFEE */
+        /* =================================================
+           COFFEE
+        ================================================== */
 
         coffeeLabel:
             "OREJIBLANCO",
@@ -314,7 +339,9 @@ const translations = {
             "BUY ON WHATSAPP",
 
 
-        /* FOOTER */
+        /* =================================================
+           FOOTER
+        ================================================== */
 
         footerTagline:
             "Costa Rican Coffee",
@@ -330,6 +357,7 @@ const translations = {
 };
 
 
+
 /* =========================================================
    ACTUALIZAR METADATOS SEO
    ========================================================= */
@@ -338,48 +366,69 @@ function updateSEO(language) {
 
     const t = translations[language];
 
+
+    /* TITLE */
+
     document.title = t.title;
 
 
-    const description = document.querySelector(
-        'meta[name="description"]'
-    );
+    /* DESCRIPTION */
+
+    const description =
+        document.querySelector(
+            'meta[name="description"]'
+        );
 
     if (description) {
+
         description.setAttribute(
             "content",
             t.description
         );
+
     }
 
 
-    const ogTitle = document.querySelector(
-        'meta[property="og:title"]'
-    );
+    /* OG TITLE */
+
+    const ogTitle =
+        document.querySelector(
+            'meta[property="og:title"]'
+        );
 
     if (ogTitle) {
+
         ogTitle.setAttribute(
             "content",
             t.ogTitle
         );
+
     }
 
 
-    const ogDescription = document.querySelector(
-        'meta[property="og:description"]'
-    );
+    /* OG DESCRIPTION */
+
+    const ogDescription =
+        document.querySelector(
+            'meta[property="og:description"]'
+        );
 
     if (ogDescription) {
+
         ogDescription.setAttribute(
             "content",
             t.ogDescription
         );
+
     }
 
 
-    const ogLocale = document.querySelector(
-        'meta[property="og:locale"]'
-    );
+    /* OG LOCALE */
+
+    const ogLocale =
+        document.querySelector(
+            'meta[property="og:locale"]'
+        );
 
     if (ogLocale) {
 
@@ -395,6 +444,7 @@ function updateSEO(language) {
 }
 
 
+
 /* =========================================================
    CAMBIO DE IDIOMA
    ========================================================= */
@@ -405,22 +455,32 @@ function setLanguage(
 ) {
 
 
-    /* Idioma válido */
+    /* =====================================================
+       VERIFICAR IDIOMA
+    ===================================================== */
 
     if (!translations[language]) {
+
         language = "es";
+
     }
 
 
-    const t = translations[language];
+    const t =
+        translations[language];
 
 
-    /* Idioma del documento */
+    /* =====================================================
+       IDIOMA DEL DOCUMENTO
+    ===================================================== */
 
-    document.documentElement.lang = language;
+    document.documentElement.lang =
+        language;
 
 
-    /* SEO */
+    /* =====================================================
+       SEO
+    ===================================================== */
 
     updateSEO(language);
 
@@ -434,7 +494,9 @@ function setLanguage(
         .forEach(element => {
 
             const key =
-                element.getAttribute("data-i18n");
+                element.getAttribute(
+                    "data-i18n"
+                );
 
 
             if (t[key] !== undefined) {
@@ -456,7 +518,9 @@ function setLanguage(
         .forEach(element => {
 
             const key =
-                element.getAttribute("data-i18n-alt");
+                element.getAttribute(
+                    "data-i18n-alt"
+                );
 
 
             if (t[key] !== undefined) {
@@ -472,7 +536,7 @@ function setLanguage(
 
 
     /* =====================================================
-       GUARDAR PREFERENCIA MANUAL
+       GUARDAR PREFERENCIA
     ===================================================== */
 
     if (savePreference) {
@@ -505,6 +569,7 @@ function setLanguage(
 }
 
 
+
 /* =========================================================
    DETECTAR IDIOMA DEL NAVEGADOR
    ========================================================= */
@@ -513,7 +578,7 @@ function detectLanguage() {
 
 
     /* =====================================================
-       Preferencia guardada
+       PREFERENCIA GUARDADA
     ===================================================== */
 
     const savedLanguage =
@@ -533,7 +598,7 @@ function detectLanguage() {
 
 
     /* =====================================================
-       Idiomas del navegador
+       IDIOMAS DEL NAVEGADOR
     ===================================================== */
 
     const browserLanguages =
@@ -541,6 +606,10 @@ function detectLanguage() {
         [navigator.language] ||
         ["es"];
 
+
+    /* =====================================================
+       BUSCAR INGLÉS
+    ===================================================== */
 
     const hasEnglish =
         browserLanguages.some(
@@ -552,13 +621,20 @@ function detectLanguage() {
 
 
     if (hasEnglish) {
+
         return "en";
+
     }
 
+
+    /* =====================================================
+       ESPAÑOL POR DEFECTO
+    ===================================================== */
 
     return "es";
 
 }
+
 
 
 /* =========================================================
@@ -570,7 +646,9 @@ document.addEventListener(
     () => {
 
 
-        /* Idioma inicial */
+        /* =================================================
+           IDIOMA INICIAL
+        ================================================== */
 
         const detectedLanguage =
             detectLanguage();
@@ -613,7 +691,6 @@ document.addEventListener(
 
 
             });
-
 
     }
 );
