@@ -90,6 +90,8 @@ const translations = {
 
         whatsappButton: "COMPRAR POR WHATSAPP",
 
+        mapsLink: "VER EN GOOGLE MAPS →",
+
         /* =================================================
            FOOTER
            ================================================= */
@@ -133,6 +135,8 @@ const translations = {
         phrase: "Coffee has given us roots,<br>the land has given us everything.",
 
         historyImageAlt: "Family working during the coffee harvest at Orejiblanco",
+
+        mapsLink: "VIEW ON GOOGLE MAPS →",
 
         /* =================================================
            ABOUT US
