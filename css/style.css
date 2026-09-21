@@ -145,12 +145,16 @@ video {
 
 .hero {
     position: relative;
+
     width: 100%;
     height: 100vh;
     min-height: 600px;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     overflow: hidden;
 }
 
@@ -161,11 +165,15 @@ video {
 
 .hero-video {
     position: absolute;
+
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     z-index: 0;
 }
 
@@ -176,8 +184,11 @@ video {
 
 .hero-overlay {
     position: absolute;
+
     inset: 0;
+
     background: rgba(19, 54, 50, 0.42);
+
     z-index: 1;
 }
 
@@ -188,16 +199,22 @@ video {
 
 .language-selector {
     position: absolute;
+
     top: 28px;
     right: 40px;
+
     z-index: 10;
 
     display: flex;
+
     align-items: center;
+
     gap: 7px;
 
     font-family: 'Lato', sans-serif;
+
     font-size: 13px;
+
     letter-spacing: 1.5px;
 }
 
@@ -205,13 +222,17 @@ video {
     padding: 4px 2px;
 
     border: none;
+
     background: transparent;
 
     color: var(--blanco);
 
     font-family: 'Lato', sans-serif;
+
     font-size: 13px;
+
     font-weight: 700;
+
     letter-spacing: 1.5px;
 
     cursor: pointer;
@@ -229,11 +250,13 @@ video {
 
 .language-selector button.active {
     color: var(--amarillo);
+
     opacity: 1;
 }
 
 .language-selector span {
     color: var(--blanco);
+
     opacity: 0.4;
 }
 
@@ -244,15 +267,19 @@ video {
 
 .hero-content {
     position: relative;
+
     z-index: 2;
 
     width: 100%;
+
     max-width: 1000px;
 
     padding: 30px;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 
     text-align: center;
@@ -260,11 +287,12 @@ video {
 
 
 /* =========================================================
-   LOGO
+   LOGO HERO
    ========================================================= */
 
 .hero-logo {
     width: min(420px, 70vw);
+
     height: auto;
 
     margin-bottom: 30px;
@@ -283,46 +311,122 @@ video {
     margin-bottom: 50px;
 
     font-size: clamp(1rem, 2vw, 1.4rem);
+
     font-weight: 300;
 
     letter-spacing: 2px;
+
     line-height: 1.5;
 }
 
 
 /* =========================================================
-   SCROLL
+   BOTONES HERO
    ========================================================= */
 
-.scroll-button {
+.hero-buttons {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 
-    gap: 10px;
+    gap: 18px;
 
-    color: var(--amarillo);
+    margin-top: 38px;
+}
+
+
+/* =========================================================
+   BOTONES HERO
+   ========================================================= */
+
+.hero-button {
+    width: 360px;
+
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    box-sizing: border-box;
+
+    padding: 15px 25px;
+
+    border: 2px solid var(--amarillo);
+
+    border-radius: 50px;
+
+    background: rgba(35, 31, 32, 0.30);
+
+    color: var(--blanco);
 
     text-decoration: none;
 
-    font-size: 0.8rem;
+    font-size: 0.82rem;
+
     font-weight: 700;
-    letter-spacing: 2px;
+
+    letter-spacing: 2.5px;
 
     transition:
+        background 0.3s ease,
         color 0.3s ease,
-        transform 0.3s ease;
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
 
-.scroll-button span {
-    font-size: 1.8rem;
-    font-weight: 300;
+
+/* =========================================================
+   TEXTO DEL BOTÓN
+   ========================================================= */
+
+.hero-button > span:first-child {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FLECHA
+   ========================================================= */
+
+.hero-button .button-arrow {
+    color: var(--amarillo);
+
+    font-size: 1.25rem;
+
+    font-weight: 400;
+
     line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
 }
 
-.scroll-button:hover {
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.hero-button:hover {
+    background: rgba(35, 31, 32, 0.65);
+
     color: var(--blanco);
-    transform: translateY(6px);
+
+    transform: translateY(-2px);
+}
+
+
+.hero-button:hover .button-arrow {
+    color: var(--amarillo);
+
+    transform: translateY(3px);
 }
 
 
@@ -334,9 +438,11 @@ video {
     min-height: 100vh;
 
     display: grid;
+
     grid-template-columns: 0.85fr 1.15fr;
 
     background-color: var(--crema);
+
     color: var(--negro);
 }
 
@@ -349,7 +455,9 @@ video {
     padding: 100px 10%;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 }
 
@@ -368,6 +476,7 @@ video {
     color: var(--amarillo);
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -382,6 +491,7 @@ video {
     margin-bottom: 35px;
 
     font-size: clamp(3rem, 6vw, 5.5rem);
+
     font-weight: 900;
 
     line-height: 0.9;
@@ -400,6 +510,7 @@ video {
     margin-bottom: 30px;
 
     font-size: 1.35rem;
+
     font-weight: 700;
 
     line-height: 1.4;
@@ -418,6 +529,7 @@ video {
     margin-bottom: 18px;
 
     font-size: 1rem;
+
     font-weight: 400;
 
     line-height: 1.7;
@@ -430,11 +542,13 @@ video {
 
 .historia-ubicacion {
     display: flex;
+
     flex-direction: column;
 
     gap: 5px;
 
     margin-top: 25px;
+
     padding-left: 20px;
 
     border-left: 3px solid var(--amarillo);
@@ -444,11 +558,13 @@ video {
     color: var(--verde);
 
     font-size: 1.2rem;
+
     font-weight: 700;
 }
 
 .historia-ubicacion span {
     font-size: 0.9rem;
+
     font-weight: 400;
 }
 
@@ -467,6 +583,7 @@ video {
     font-family: 'Lato', sans-serif;
 
     font-size: 12px;
+
     font-weight: 700;
 
     letter-spacing: 1.5px;
@@ -495,11 +612,13 @@ video {
 
 .historia-imagen img {
     width: 100%;
+
     height: 100%;
 
     min-height: 700px;
 
     object-fit: cover;
+
     object-position: center;
 
     display: block;
@@ -514,9 +633,11 @@ video {
     position: absolute;
 
     right: 8%;
+
     bottom: 10%;
 
     width: 90%;
+
     max-width: 430px;
 
     padding: 10px;
@@ -530,6 +651,7 @@ video {
     font-family: 'VerandahReverie', cursive;
 
     font-size: clamp(1.5rem, 3.5vw, 3.2rem);
+
     font-weight: 400;
 
     line-height: 1;
@@ -547,6 +669,7 @@ video {
 
 .quienes-somos {
     background-color: var(--verde);
+
     color: var(--blanco);
 }
 
@@ -562,6 +685,7 @@ video {
     margin-bottom: 45px;
 
     font-size: clamp(3rem, 6vw, 5.5rem);
+
     font-weight: 900;
 
     line-height: 0.9;
@@ -576,6 +700,7 @@ video {
 
 .quienes-somos-contenido {
     font-size: 1rem;
+
     line-height: 1.8;
 }
 
@@ -604,6 +729,7 @@ video {
     display: block;
 
     width: 100%;
+
     height: auto;
 
     border-radius: 2px;
@@ -631,9 +757,11 @@ video {
     clear: both;
 
     margin-top: 55px;
+
     margin-bottom: 25px;
 
     font-size: clamp(2rem, 3.5vw, 3rem);
+
     font-weight: 900;
 
     line-height: 1;
@@ -650,6 +778,7 @@ video {
     clear: both;
 
     margin-top: 35px;
+
     padding-left: 20px;
 
     border-left: 3px solid var(--amarillo);
@@ -666,6 +795,7 @@ video {
     padding: 120px 10%;
 
     background-color: var(--crema);
+
     color: var(--negro);
 }
 
@@ -688,6 +818,7 @@ video {
     margin-bottom: 35px;
 
     font-size: clamp(2.8rem, 6vw, 5.5rem);
+
     font-weight: 900;
 
     line-height: 0.95;
@@ -697,6 +828,7 @@ video {
     max-width: 620px;
 
     font-size: 1.1rem;
+
     font-weight: 300;
 
     line-height: 1.8;
@@ -730,11 +862,13 @@ video {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 }
 
 .cafe-imagen img {
     width: 100%;
+
     max-width: 260px;
 
     height: auto;
@@ -757,6 +891,7 @@ video {
     color: var(--dorado);
 
     font-size: 0.75rem;
+
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -766,6 +901,7 @@ video {
     margin-bottom: 25px;
 
     font-size: clamp(2rem, 4vw, 3.5rem);
+
     font-weight: 900;
 
     line-height: 1;
@@ -775,6 +911,7 @@ video {
     margin-bottom: 35px;
 
     font-size: 1.05rem;
+
     font-weight: 300;
 
     line-height: 1.8;
@@ -805,17 +942,19 @@ video {
 
 .presentacion span {
     font-size: 0.9rem;
+
     font-weight: 700;
 }
 
 .presentacion:hover {
     background-color: var(--verde);
+
     color: var(--blanco);
 }
 
 
 /* =========================================================
-   BOTONES
+   BOTONES CONTACTO
    ========================================================= */
 
 .botones-contacto {
@@ -824,6 +963,8 @@ video {
     align-items: stretch;
 
     gap: 3px;
+
+    scroll-margin-top: 30px;
 }
 
 .botones-contacto .boton-contacto,
@@ -833,9 +974,11 @@ video {
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     background-color: var(--verde);
+
     color: var(--blanco);
 
     text-decoration: none;
@@ -846,19 +989,24 @@ video {
 }
 
 
-/* Correo */
+/* =========================================================
+   CORREO
+   ========================================================= */
 
 .botones-contacto .boton-contacto {
     padding: 15px 30px;
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 2px;
 }
 
 
-/* WhatsApp */
+/* =========================================================
+   WHATSAPP
+   ========================================================= */
 
 .botones-contacto .boton-whatsapp {
     gap: 12px;
@@ -868,6 +1016,7 @@ video {
     font-family: 'Lato', sans-serif;
 
     font-size: 0.8rem;
+
     font-weight: 700;
 
     letter-spacing: 1.5px;
@@ -876,17 +1025,22 @@ video {
 }
 
 
-/* Icono */
+/* =========================================================
+   ICONO WHATSAPP
+   ========================================================= */
 
 .boton-whatsapp img {
     width: 22px;
+
     height: 22px;
 
     display: block;
 }
 
 
-/* Hover */
+/* =========================================================
+   HOVER CONTACTO
+   ========================================================= */
 
 .botones-contacto .boton-contacto:hover,
 .botones-contacto .boton-whatsapp:hover {
@@ -919,6 +1073,7 @@ video {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
     gap: 50px;
@@ -945,6 +1100,7 @@ video {
 
 .footer-marca img {
     width: 220px;
+
     height: auto;
 
     display: block;
@@ -979,6 +1135,7 @@ video {
     color: var(--amarillo);
 
     font-size: 0.75rem;
+
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -999,11 +1156,13 @@ video {
 
 .footer-redes a {
     width: 42px;
+
     height: 42px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border: 1px solid rgba(230, 176, 64, 0.5);
@@ -1016,6 +1175,7 @@ video {
 
 .footer-redes img {
     width: 20px;
+
     height: 20px;
 
     display: block;
@@ -1044,6 +1204,7 @@ video {
     text-decoration: none;
 
     font-size: 0.9rem;
+
     font-weight: 400;
 
     transition: color 0.3s ease;
@@ -1074,6 +1235,7 @@ video {
     color: rgba(255, 255, 255, 0.55);
 
     font-size: 0.75rem;
+
     font-weight: 300;
 }
 
@@ -1094,6 +1256,7 @@ video {
 
     .language-selector {
         top: 25px;
+
         right: 30px;
     }
 
@@ -1107,6 +1270,7 @@ video {
 
     .footer {
         padding-left: 8%;
+
         padding-right: 8%;
     }
 
@@ -1116,8 +1280,10 @@ video {
 
     .quienes-somos-foto {
         width: 40%;
+
         margin-left: 35px;
     }
+
 }
 
 
@@ -1128,15 +1294,19 @@ video {
 @media (max-width: 768px) {
 
 
-    /* HERO */
+    /* =====================================================
+       HERO
+    ====================================================== */
 
     .hero {
         height: 100svh;
+
         min-height: 550px;
     }
 
     .language-selector {
         top: 20px;
+
         right: 20px;
 
         font-size: 12px;
@@ -1162,13 +1332,37 @@ video {
         letter-spacing: 1px;
     }
 
-    .scroll-button {
-        font-size: 0.7rem;
-        letter-spacing: 1.5px;
+
+    /* =====================================================
+       BOTONES HERO
+    ====================================================== */
+
+    .hero-buttons {
+        gap: 14px;
+
+        margin-top: 30px;
+    }
+
+    .hero-button {
+        width: min(360px, 88%);
+
+        min-height: 54px;
+
+        padding: 14px 18px;
+
+        font-size: 0.72rem;
+
+        letter-spacing: 2px;
+    }
+
+    .hero-button .button-arrow {
+        font-size: 1.15rem;
     }
 
 
-    /* HISTORIA */
+    /* =====================================================
+       HISTORIA
+    ====================================================== */
 
     .historia {
         display: flex;
@@ -1194,6 +1388,7 @@ video {
 
     .historia-imagen img {
         width: 100%;
+
         height: 100%;
 
         min-height: 75vh;
@@ -1203,9 +1398,11 @@ video {
 
     .historia-frase {
         right: 7%;
+
         bottom: 5%;
 
         width: 90%;
+
         max-width: none;
     }
 
@@ -1214,7 +1411,9 @@ video {
     }
 
 
-    /* QUIÉNES SOMOS */
+    /* =====================================================
+       QUIÉNES SOMOS
+    ====================================================== */
 
     .quienes-somos-texto {
         padding: 80px 8% 90px;
@@ -1237,7 +1436,9 @@ video {
     }
 
 
-    /* CAFÉ */
+    /* =====================================================
+       CAFÉ
+    ====================================================== */
 
     .cafe {
         padding: 90px 8%;
@@ -1284,7 +1485,9 @@ video {
     }
 
 
-    /* BOTONES */
+    /* =====================================================
+       BOTONES CONTACTO
+    ====================================================== */
 
     .botones-contacto {
         flex-direction: column;
@@ -1300,7 +1503,9 @@ video {
     }
 
 
-    /* FOOTER */
+    /* =====================================================
+       FOOTER
+    ====================================================== */
 
     .footer {
         padding: 60px 8% 25px;
@@ -1335,6 +1540,7 @@ video {
     .footer-bottom p {
         font-size: 0.7rem;
     }
+
 }
 
 
@@ -1350,6 +1556,7 @@ video {
 
     .language-selector {
         top: 18px;
+
         right: 18px;
     }
 
@@ -1361,18 +1568,37 @@ video {
         max-width: 290px;
     }
 
+
+    /* BOTONES HERO */
+
+    .hero-buttons {
+        gap: 20px;
+    }
+
+
+    /* HISTORIA */
+
     .historia-texto {
         padding-left: 7%;
+
         padding-right: 7%;
     }
+
+
+    /* CAFÉ */
 
     .cafe {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
+
+    /* QUIÉNES SOMOS */
+
     .quienes-somos-texto {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
@@ -1380,8 +1606,12 @@ video {
         width: 100%;
     }
 
+
+    /* FOOTER */
+
     .footer {
         padding-left: 7%;
+
         padding-right: 7%;
     }
 
@@ -1391,6 +1621,8 @@ video {
 
     .maps-link {
         font-size: 11px;
+
         letter-spacing: 1.2px;
     }
+
 }
