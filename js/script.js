@@ -1,8 +1,15 @@
 /* =========================================================
-   OREJIBLANCO - IDIOMAS
+   OREJIBLANCO
+   Sistema de idiomas + SEO
+   ========================================================= */
+
+
+/* =========================================================
+   TRADUCCIONES
    ========================================================= */
 
 const translations = {
+
 
     /* =====================================================
        ESPAÑOL
@@ -10,97 +17,155 @@ const translations = {
 
     es: {
 
-        title: "Orejiblanco | Café de Costa Rica",
+        title: "Orejiblanco | Café de Costa Rica cultivado en Heredia",
 
-        tagline: "Café que nace de la tierra que cuidamos.",
-        discover: "CONOZCA NUESTRA FINCA",
+        description:
+            "Orejiblanco es una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde cultivamos café cuidando el suelo, la biodiversidad y cada etapa del proceso.",
 
-        historyLabel: "OREJIBLANCO",
-        historyTitle: "Nuestra<br>historia",
-        historyIntro: "Una historia que comenzó hace generaciones y continúa hoy.",
+        ogTitle:
+            "Orejiblanco | Café de Costa Rica",
 
-        history1: "Orejiblanco es el resultado del trabajo y la dedicación de nuestra familia, arraigada en San Bosco de Santa Bárbara de Heredia.",
+        ogDescription:
+            "Una finca cafetalera familiar en Santa Bárbara de Heredia, Costa Rica, donde el café nace de la tierra que cuidamos.",
 
-        history2: "Desde hace generaciones cultivamos café con respeto por la tierra y por las personas.",
 
-        history3: "Con el tiempo hemos aprendido que el mejor café nace cuando cuidamos el suelo, la biodiversidad y cada detalle del proceso.",
+        /* HERO */
 
-        history4: "Hoy, Orejiblanco representa nuestro compromiso con la calidad, la sostenibilidad y con las futuras generaciones.",
+        tagline:
+            "Café que nace de la tierra que cuidamos.",
 
-        location: "San Bosco, Santa Bárbara de Heredia · Costa Rica",
+        discover:
+            "CONOZCA NUESTRA FINCA",
 
-        phrase: "El café nos ha dado raíces,<br>la tierra nos ha dado todo.",
 
-        historyImageAlt: "Familia trabajando en la cosecha de café en Orejiblanco",
+        /* HISTORIA */
 
-        /* =================================================
-           QUIÉNES SOMOS
-           ================================================= */
+        historyLabel:
+            "OREJIBLANCO",
 
-        aboutLabel: "OREJIBLANCO",
-        aboutTitle: "Quiénes<br>somos",
+        historyTitle:
+            "Nuestra<br>historia",
 
-        aboutIntro: "Orejiblanco es una finca cafetalera familiar ubicada en las tierras altas de Heredia, Costa Rica, donde producir café significa también cuidar la tierra que lo hace posible.",
+        historyIntro:
+            "Una historia que comenzó hace generaciones y continúa hoy.",
 
-        about1: "Nuestro trabajo parte de una convicción: <strong>la calidad del café comienza en la salud del suelo.</strong> Por eso hemos venido desarrollando prácticas orientadas a su regeneración y al equilibrio natural de la finca. Mantenemos una política de <strong>cero herbicidas</strong>, aprovechando coberturas vegetales, residuos de poda y otros materiales orgánicos para proteger y enriquecer el suelo.",
+        history1:
+            "Orejiblanco es el resultado del trabajo y la dedicación de nuestra familia, arraigada en San Bosco de Santa Bárbara de Heredia.",
 
-        about2: "Contamos con el <strong>Galardón Bandera Azul Ecológica</strong>, un reconocimiento que refleja nuestro compromiso con la protección del ambiente y con la implementación de buenas prácticas dentro de nuestra finca.",
+        history2:
+            "Desde hace generaciones cultivamos café con respeto por la tierra y por las personas.",
 
-        about3: "En nuestra finca también elaboramos y utilizamos <strong>bioinsumos y enmiendas</strong>, incorporamos fertilizantes de origen orgánico y buscamos alternativas de manejo que permitan reducir progresivamente la carga de insumos químicos. Para el control de plagas y enfermedades priorizamos métodos de manejo orgánico y preventivo.",
+        history3:
+            "Con el tiempo hemos aprendido que el mejor café nace cuando cuidamos el suelo, la biodiversidad y cada detalle del proceso.",
 
-        about4: "Al mismo tiempo, entendemos que algunos insumos convencionales pueden ser un complemento necesario para asegurar una producción estable y saludable cuando las condiciones lo requieren. <strong>Nuestro objetivo no es simplemente eliminar insumos, sino utilizarlos de manera responsable y reducir su dependencia siempre que sea posible.</strong>",
+        history4:
+            "Hoy, Orejiblanco representa nuestro compromiso con la calidad, la sostenibilidad y con las futuras generaciones.",
 
-        qualityTitle: "Calidad que<br>nace del cuidado",
+        location:
+            "San Bosco, Santa Bárbara de Heredia · Costa Rica",
 
-        about5: "Nuestro café ha encontrado una buena aceptación y actualmente nuestra producción forma parte del <strong>Programa Nespresso AAA Sustainable Quality™</strong>, desarrollado en colaboración con <strong>Rainforest Alliance</strong> y a través de <strong>Volcafe</strong>, empresa a la que entregamos nuestro café en fruta.",
+        phrase:
+            "El café nos ha dado raíces,<br>la tierra nos ha dado todo.",
 
-        about6: "Esta relación nos ha permitido acceder a <strong>capacitaciones, asistencia técnica, incentivos y acompañamiento en campo</strong>, que contribuyen a mejorar nuestras prácticas agrícolas, la calidad del café y la sostenibilidad de nuestra producción.",
+        mapsLink:
+            "VER EN GOOGLE MAPS →",
 
-        about7: "Pero para nosotros la sostenibilidad también significa <strong>cuidar a las personas.</strong> Durante la cosecha procuramos brindar un trato respetuoso y digno a quienes nos ayudan en la recolección del café, reconociendo que detrás de cada grano existe el trabajo de muchas personas que hacen posible llevarlo de nuestra finca a la taza.",
+        historyImageAlt:
+            "Familia trabajando en la cosecha de café en Orejiblanco",
 
-        learningTitle: "Aprender, compartir<br>y seguir mejorando",
 
-        about8: "El desarrollo de Orejiblanco también ha sido posible gracias al conocimiento compartido. Agradecemos especialmente el acompañamiento y las oportunidades de aprendizaje que hemos recibido de instituciones como el <strong>Ministerio de Agricultura y Ganadería (MAG), ICAFE, INA y UNA</strong>, así como de amigos, colegas y otros productores.",
+        /* QUIÉNES SOMOS */
 
-        about9: "Las capacitaciones, talleres, asistencia técnica, trabajos de campo e intercambio de experiencias nos han permitido experimentar, aprender y encontrar nuevas formas de trabajar nuestra finca.",
+        aboutLabel:
+            "OREJIBLANCO",
 
-        aboutClosing: "En Orejiblanco seguimos aprendiendo de la tierra, de las personas y de quienes comparten nuestro compromiso con una caficultura más responsable.",
+        aboutTitle:
+            "Quiénes<br>somos",
 
-        aboutImageAlt: "Café en fruta durante la cosecha en Orejiblanco",
+        aboutIntro:
+            "Orejiblanco es una finca cafetalera familiar ubicada en las tierras altas de Heredia, Costa Rica, donde producir café significa también cuidar la tierra que lo hace posible.",
 
-        /* =================================================
-           NUESTRO CAFÉ
-           ================================================= */
+        about1:
+            "Nuestro trabajo parte de una convicción: <strong>la calidad del café comienza en la salud del suelo.</strong> Por eso hemos venido desarrollando prácticas orientadas a su regeneración y al equilibrio natural de la finca. Mantenemos una política de <strong>cero herbicidas</strong>, aprovechando coberturas vegetales, residuos de poda y otros materiales orgánicos para proteger y enriquecer el suelo.",
 
-        coffeeLabel: "OREJIBLANCO",
+        about2:
+            "Contamos con el <strong>Galardón Bandera Azul Ecológica</strong>, un reconocimiento que refleja nuestro compromiso con la protección del ambiente y con la implementación de buenas prácticas dentro de nuestra finca.",
 
-        coffeeTitle: "Café para<br>disfrutar en casa.",
+        about3:
+            "En nuestra finca también elaboramos y utilizamos <strong>bioinsumos y enmiendas</strong>, incorporamos fertilizantes de origen orgánico y buscamos alternativas de manejo que permitan reducir progresivamente la carga de insumos químicos. Para el control de plagas y enfermedades priorizamos métodos de manejo orgánico y preventivo.",
 
-        coffeeIntro: "Nuestro café nace en las montañas de Santa Bárbara de Heredia, donde cultivamos y cuidamos cada detalle desde la finca hasta la taza.",
+        about4:
+            "Al mismo tiempo, entendemos que algunos insumos convencionales pueden ser un complemento necesario para asegurar una producción estable y saludable cuando las condiciones lo requieren. <strong>Nuestro objetivo no es simplemente eliminar insumos, sino utilizarlos de manera responsable y reducir su dependencia siempre que sea posible.</strong>",
 
-        productLabel: "CAFÉ OREJIBLANCO",
+        qualityTitle:
+            "Calidad que<br>nace del cuidado",
 
-        productTitle: "Nuestro café",
+        about5:
+            "Nuestro café ha encontrado una buena aceptación y actualmente nuestra producción forma parte del <strong>Programa Nespresso AAA Sustainable Quality™</strong>, desarrollado en colaboración con <strong>Rainforest Alliance</strong> y a través de <strong>Volcafe</strong>, empresa a la que entregamos nuestro café en fruta.",
 
-        productDescription: "Disponible en tres presentaciones para disfrutar Orejiblanco en casa, regalar o compartir.",
+        about6:
+            "Esta relación nos ha permitido acceder a <strong>capacitaciones, asistencia técnica, incentivos y acompañamiento en campo</strong>, que contribuyen a mejorar nuestras prácticas agrícolas, la calidad del café y la sostenibilidad de nuestra producción.",
 
-        coffeeImageAlt: "Café Orejiblanco",
+        about7:
+            "Pero para nosotros la sostenibilidad también significa <strong>cuidar a las personas.</strong> Durante la cosecha procuramos brindar un trato respetuoso y digno a quienes nos ayudan en la recolección del café, reconociendo que detrás de cada grano existe el trabajo de muchas personas que hacen posible llevarlo de nuestra finca a la taza.",
 
-        emailButton: "ESCRÍBANOS",
+        learningTitle:
+            "Aprender, compartir<br>y seguir mejorando",
 
-        whatsappButton: "COMPRAR POR WHATSAPP",
+        about8:
+            "El desarrollo de Orejiblanco también ha sido posible gracias al conocimiento compartido. Agradecemos especialmente el acompañamiento y las oportunidades de aprendizaje que hemos recibido de instituciones como el <strong>Ministerio de Agricultura y Ganadería (MAG), ICAFE, INA y UNA</strong>, así como de amigos, colegas y otros productores.",
 
-        mapsLink: "VER EN GOOGLE MAPS →",
+        about9:
+            "Las capacitaciones, talleres, asistencia técnica, trabajos de campo e intercambio de experiencias nos han permitido experimentar, aprender y encontrar nuevas formas de trabajar nuestra finca.",
 
-        /* =================================================
-           FOOTER
-           ================================================= */
+        aboutClosing:
+            "En Orejiblanco seguimos aprendiendo de la tierra, de las personas y de quienes comparten nuestro compromiso con una caficultura más responsable.",
 
-        footerTagline: "Café de Costa Rica",
+        aboutImageAlt:
+            "Café en fruta durante la cosecha en Orejiblanco",
 
-        connect: "CONECTEMOS",
 
-        footerCopyright: "© 2026 Orejiblanco · Café de Costa Rica"
+        /* CAFÉ */
+
+        coffeeLabel:
+            "OREJIBLANCO",
+
+        coffeeTitle:
+            "Café para<br>disfrutar en casa.",
+
+        coffeeIntro:
+            "Nuestro café nace en las montañas de Santa Bárbara de Heredia, donde cultivamos y cuidamos cada detalle desde la finca hasta la taza.",
+
+        productLabel:
+            "CAFÉ OREJIBLANCO",
+
+        productTitle:
+            "Nuestro café",
+
+        productDescription:
+            "Disponible en tres presentaciones para disfrutar Orejiblanco en casa, regalar o compartir.",
+
+        coffeeImageAlt:
+            "Café Orejiblanco",
+
+        emailButton:
+            "ESCRÍBANOS",
+
+        whatsappButton:
+            "COMPRAR POR WHATSAPP",
+
+
+        /* FOOTER */
+
+        footerTagline:
+            "Café de Costa Rica",
+
+        connect:
+            "CONECTEMOS",
+
+        footerCopyright:
+            "© 2026 Orejiblanco · Café de Costa Rica"
+
     },
 
 
@@ -110,162 +175,305 @@ const translations = {
 
     en: {
 
-        title: "Orejiblanco | Costa Rican Coffee",
+        title:
+            "Orejiblanco | Costa Rican Coffee",
 
-        tagline: "Coffee born from the land we care for.",
+        description:
+            "Orejiblanco is a family coffee farm in Santa Bárbara de Heredia, Costa Rica, where we grow coffee while caring for the soil, biodiversity and every stage of the process.",
 
-        discover: "DISCOVER OUR FARM",
+        ogTitle:
+            "Orejiblanco | Costa Rican Coffee",
 
-        historyLabel: "OREJIBLANCO",
+        ogDescription:
+            "A family coffee farm in Santa Bárbara de Heredia, Costa Rica, where coffee is born from the land we care for.",
 
-        historyTitle: "Our<br>story",
 
-        historyIntro: "A story that began generations ago and continues today.",
+        /* HERO */
 
-        history1: "Orejiblanco is the result of our family's work and dedication, rooted in San Bosco, Santa Bárbara de Heredia.",
+        tagline:
+            "Coffee born from the land we care for.",
 
-        history2: "For generations, we have cultivated coffee with respect for the land and for the people.",
+        discover:
+            "DISCOVER OUR FARM",
 
-        history3: "Over time, we have learned that great coffee begins with caring for the soil, biodiversity and every detail of the process.",
 
-        history4: "Today, Orejiblanco represents our commitment to quality, sustainability and future generations.",
+        /* HISTORY */
 
-        location: "San Bosco, Santa Bárbara de Heredia · Costa Rica",
+        historyLabel:
+            "OREJIBLANCO",
 
-        phrase: "Coffee has given us roots,<br>the land has given us everything.",
+        historyTitle:
+            "Our<br>story",
 
-        historyImageAlt: "Family working during the coffee harvest at Orejiblanco",
+        historyIntro:
+            "A story that began generations ago and continues today.",
 
-        mapsLink: "VIEW ON GOOGLE MAPS →",
+        history1:
+            "Orejiblanco is the result of our family's work and dedication, rooted in San Bosco, Santa Bárbara de Heredia.",
 
-        /* =================================================
-           ABOUT US
-           ================================================= */
+        history2:
+            "For generations, we have cultivated coffee with respect for the land and for the people.",
 
-        aboutLabel: "OREJIBLANCO",
+        history3:
+            "Over time, we have learned that great coffee begins with caring for the soil, biodiversity and every detail of the process.",
 
-        aboutTitle: "Who<br>we are",
+        history4:
+            "Today, Orejiblanco represents our commitment to quality, sustainability and future generations.",
 
-        aboutIntro: "Orejiblanco is a family coffee farm located in the highlands of Heredia, Costa Rica, where producing coffee also means caring for the land that makes it possible.",
+        location:
+            "San Bosco, Santa Bárbara de Heredia · Costa Rica",
 
-        about1: "Our work is guided by one conviction: <strong>coffee quality begins with healthy soil.</strong> That is why we have been developing practices focused on soil regeneration and the natural balance of the farm. We maintain a <strong>zero-herbicide</strong> policy, using plant cover, pruning residues and other organic materials to protect and enrich the soil.",
+        phrase:
+            "Coffee has given us roots,<br>the land has given us everything.",
 
-        about2: "We have received the <strong>Bandera Azul Ecológica</strong> recognition, reflecting our commitment to environmental protection and good practices on our farm.",
+        mapsLink:
+            "VIEW ON GOOGLE MAPS →",
 
-        about3: "We also produce and use <strong>biological inputs and soil amendments</strong>, incorporate organic fertilizers and seek management alternatives that progressively reduce our dependence on chemical inputs. For pest and disease management, we prioritize organic and preventive approaches.",
+        historyImageAlt:
+            "Family working during the coffee harvest at Orejiblanco",
 
-        about4: "At the same time, we understand that some conventional inputs can be a necessary complement to ensure stable and healthy production when conditions require them. <strong>Our goal is not simply to eliminate inputs, but to use them responsibly and reduce dependence whenever possible.</strong>",
 
-        qualityTitle: "Quality<br>born from care",
+        /* ABOUT */
 
-        about5: "Our coffee has received positive acceptance and our production is currently part of the <strong>Nespresso AAA Sustainable Quality™ Program</strong>, developed in collaboration with <strong>Rainforest Alliance</strong> and through <strong>Volcafe</strong>, the company to which we deliver our coffee cherries.",
+        aboutLabel:
+            "OREJIBLANCO",
 
-        about6: "This relationship has given us access to <strong>training, technical assistance, incentives and field support</strong>, helping us improve our agricultural practices, coffee quality and production sustainability.",
+        aboutTitle:
+            "Who<br>we are",
 
-        about7: "For us, sustainability also means <strong>caring for people.</strong> During harvest, we strive to provide respectful and dignified treatment to those who help us pick our coffee, recognizing that every bean represents the work of many people who make its journey from our farm to the cup possible.",
+        aboutIntro:
+            "Orejiblanco is a family coffee farm located in the highlands of Heredia, Costa Rica, where producing coffee also means caring for the land that makes it possible.",
 
-        learningTitle: "Learning, sharing<br>and improving",
+        about1:
+            "Our work is guided by one conviction: <strong>coffee quality begins with healthy soil.</strong> That is why we have been developing practices focused on soil regeneration and the natural balance of the farm. We maintain a <strong>zero-herbicide</strong> policy, using plant cover, pruning residues and other organic materials to protect and enrich the soil.",
 
-        about8: "The development of Orejiblanco has also been made possible through shared knowledge. We are especially grateful for the support and learning opportunities provided by institutions such as the <strong>Ministry of Agriculture and Livestock (MAG), ICAFE, INA and UNA</strong>, as well as friends, colleagues and fellow producers.",
+        about2:
+            "We have received the <strong>Bandera Azul Ecológica</strong> recognition, reflecting our commitment to environmental protection and good practices on our farm.",
 
-        about9: "Training sessions, workshops, technical assistance, field work and the exchange of experiences have allowed us to experiment, learn and discover new ways of working our farm.",
+        about3:
+            "We also produce and use <strong>biological inputs and soil amendments</strong>, incorporate organic fertilizers and seek management alternatives that progressively reduce our dependence on chemical inputs. For pest and disease management, we prioritize organic and preventive approaches.",
 
-        aboutClosing: "At Orejiblanco, we continue learning from the land, from people and from those who share our commitment to more responsible coffee farming.",
+        about4:
+            "At the same time, we understand that some conventional inputs can be a necessary complement to ensure stable and healthy production when conditions require them. <strong>Our goal is not simply to eliminate inputs, but to use them responsibly and reduce dependence whenever possible.</strong>",
 
-        aboutImageAlt: "Coffee cherries during the harvest at Orejiblanco",
+        qualityTitle:
+            "Quality<br>born from care",
 
-        /* =================================================
-           OUR COFFEE
-           ================================================= */
+        about5:
+            "Our coffee has received positive acceptance and our production is currently part of the <strong>Nespresso AAA Sustainable Quality™ Program</strong>, developed in collaboration with <strong>Rainforest Alliance</strong> and through <strong>Volcafe</strong>, the company to which we deliver our coffee cherries.",
 
-        coffeeLabel: "OREJIBLANCO",
+        about6:
+            "This relationship has given us access to <strong>training, technical assistance, incentives and field support</strong>, helping us improve our agricultural practices, coffee quality and production sustainability.",
 
-        coffeeTitle: "Coffee to<br>enjoy at home.",
+        about7:
+            "For us, sustainability also means <strong>caring for people.</strong> During harvest, we strive to provide respectful and dignified treatment to those who help us pick our coffee, recognizing that every bean represents the work of many people who make its journey from our farm to the cup possible.",
 
-        coffeeIntro: "Our coffee is born in the mountains of Santa Bárbara de Heredia, where we cultivate and care for every detail from the farm to the cup.",
+        learningTitle:
+            "Learning, sharing<br>and improving",
 
-        productLabel: "OREJIBLANCO COFFEE",
+        about8:
+            "The development of Orejiblanco has also been made possible through shared knowledge. We are especially grateful for the support and learning opportunities provided by institutions such as the <strong>Ministry of Agriculture and Livestock (MAG), ICAFE, INA and UNA</strong>, as well as friends, colleagues and fellow producers.",
 
-        productTitle: "Our coffee",
+        about9:
+            "Training sessions, workshops, technical assistance, field work and the exchange of experiences have allowed us to experiment, learn and discover new ways of working our farm.",
 
-        productDescription: "Available in three sizes to enjoy Orejiblanco at home, give as a gift or share.",
+        aboutClosing:
+            "At Orejiblanco, we continue learning from the land, from people and from those who share our commitment to more responsible coffee farming.",
 
-        coffeeImageAlt: "Orejiblanco Coffee",
+        aboutImageAlt:
+            "Coffee cherries during the harvest at Orejiblanco",
 
-        emailButton: "CONTACT US",
 
-        whatsappButton: "BUY ON WHATSAPP",
+        /* COFFEE */
 
-        /* =================================================
-           FOOTER
-           ================================================= */
+        coffeeLabel:
+            "OREJIBLANCO",
 
-        footerTagline: "Costa Rican Coffee",
+        coffeeTitle:
+            "Coffee to<br>enjoy at home.",
 
-        connect: "LET'S CONNECT",
+        coffeeIntro:
+            "Our coffee is born in the mountains of Santa Bárbara de Heredia, where we cultivate and care for every detail from the farm to the cup.",
 
-        footerCopyright: "© 2026 Orejiblanco · Costa Rican Coffee"
+        productLabel:
+            "OREJIBLANCO COFFEE",
+
+        productTitle:
+            "Our coffee",
+
+        productDescription:
+            "Available in three sizes to enjoy Orejiblanco at home, give as a gift or share.",
+
+        coffeeImageAlt:
+            "Orejiblanco Coffee",
+
+        emailButton:
+            "CONTACT US",
+
+        whatsappButton:
+            "BUY ON WHATSAPP",
+
+
+        /* FOOTER */
+
+        footerTagline:
+            "Costa Rican Coffee",
+
+        connect:
+            "LET'S CONNECT",
+
+        footerCopyright:
+            "© 2026 Orejiblanco · Costa Rican Coffee"
+
     }
 
 };
 
 
 /* =========================================================
-   CAMBIO DE IDIOMA
+   ACTUALIZAR METADATOS SEO
    ========================================================= */
 
-function setLanguage(language, savePreference = false) {
-
-    // Si el idioma no existe, usamos español
-    if (!translations[language]) {
-        language = "es";
-    }
+function updateSEO(language) {
 
     const t = translations[language];
-
-
-    /* =====================================================
-       IDIOMA DEL DOCUMENTO Y TÍTULO
-       ===================================================== */
-
-    document.documentElement.lang = language;
 
     document.title = t.title;
 
 
+    const description = document.querySelector(
+        'meta[name="description"]'
+    );
+
+    if (description) {
+        description.setAttribute(
+            "content",
+            t.description
+        );
+    }
+
+
+    const ogTitle = document.querySelector(
+        'meta[property="og:title"]'
+    );
+
+    if (ogTitle) {
+        ogTitle.setAttribute(
+            "content",
+            t.ogTitle
+        );
+    }
+
+
+    const ogDescription = document.querySelector(
+        'meta[property="og:description"]'
+    );
+
+    if (ogDescription) {
+        ogDescription.setAttribute(
+            "content",
+            t.ogDescription
+        );
+    }
+
+
+    const ogLocale = document.querySelector(
+        'meta[property="og:locale"]'
+    );
+
+    if (ogLocale) {
+
+        ogLocale.setAttribute(
+            "content",
+            language === "en"
+                ? "en_US"
+                : "es_CR"
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   CAMBIO DE IDIOMA
+   ========================================================= */
+
+function setLanguage(
+    language,
+    savePreference = false
+) {
+
+
+    /* Idioma válido */
+
+    if (!translations[language]) {
+        language = "es";
+    }
+
+
+    const t = translations[language];
+
+
+    /* Idioma del documento */
+
+    document.documentElement.lang = language;
+
+
+    /* SEO */
+
+    updateSEO(language);
+
+
     /* =====================================================
-       TRADUCIR TEXTOS
-       ===================================================== */
+       TEXTOS
+    ===================================================== */
 
-    document.querySelectorAll("[data-i18n]").forEach(element => {
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
 
-        const key = element.getAttribute("data-i18n");
-
-        if (t[key] !== undefined) {
-            element.innerHTML = t[key];
-        }
-
-    });
+            const key =
+                element.getAttribute("data-i18n");
 
 
-    /* =====================================================
-       TRADUCIR ALT DE IMÁGENES
-       ===================================================== */
+            if (t[key] !== undefined) {
 
-    document.querySelectorAll("[data-i18n-alt]").forEach(element => {
+                element.innerHTML =
+                    t[key];
 
-        const key = element.getAttribute("data-i18n-alt");
+            }
 
-        if (t[key] !== undefined) {
-            element.setAttribute("alt", t[key]);
-        }
-
-    });
+        });
 
 
     /* =====================================================
-       GUARDAR ELECCIÓN MANUAL
-       ===================================================== */
+       ALT DE IMÁGENES
+    ===================================================== */
+
+    document
+        .querySelectorAll("[data-i18n-alt]")
+        .forEach(element => {
+
+            const key =
+                element.getAttribute("data-i18n-alt");
+
+
+            if (t[key] !== undefined) {
+
+                element.setAttribute(
+                    "alt",
+                    t[key]
+                );
+
+            }
+
+        });
+
+
+    /* =====================================================
+       GUARDAR PREFERENCIA MANUAL
+    ===================================================== */
 
     if (savePreference) {
 
@@ -278,17 +486,21 @@ function setLanguage(language, savePreference = false) {
 
 
     /* =====================================================
-       ACTUALIZAR BOTONES ES / EN
-       ===================================================== */
+       BOTONES ES / EN
+    ===================================================== */
 
-    document.querySelectorAll("[data-language]").forEach(button => {
+    document
+        .querySelectorAll("[data-language]")
+        .forEach(button => {
 
-        button.classList.toggle(
-            "active",
-            button.getAttribute("data-language") === language
-        );
+            button.classList.toggle(
+                "active",
+                button.getAttribute(
+                    "data-language"
+                ) === language
+            );
 
-    });
+        });
 
 }
 
@@ -299,13 +511,15 @@ function setLanguage(language, savePreference = false) {
 
 function detectLanguage() {
 
-    /*
-       Primero revisamos si el visitante ya eligió
-       manualmente un idioma.
-    */
+
+    /* =====================================================
+       Preferencia guardada
+    ===================================================== */
 
     const savedLanguage =
-        localStorage.getItem("orejiblanco-language");
+        localStorage.getItem(
+            "orejiblanco-language"
+        );
 
 
     if (
@@ -318,10 +532,9 @@ function detectLanguage() {
     }
 
 
-    /*
-       Si no existe una elección manual,
-       revisamos los idiomas preferidos del navegador.
-    */
+    /* =====================================================
+       Idiomas del navegador
+    ===================================================== */
 
     const browserLanguages =
         navigator.languages ||
@@ -329,25 +542,19 @@ function detectLanguage() {
         ["es"];
 
 
-    /*
-       Si alguno de los idiomas preferidos
-       es inglés, mostramos inglés.
-    */
-
-    const hasEnglish = browserLanguages.some(language =>
-        language.toLowerCase().startsWith("en")
-    );
+    const hasEnglish =
+        browserLanguages.some(
+            language =>
+                language
+                    .toLowerCase()
+                    .startsWith("en")
+        );
 
 
     if (hasEnglish) {
         return "en";
     }
 
-
-    /*
-       Para cualquier otro idioma,
-       utilizamos español como idioma predeterminado.
-    */
 
     return "es";
 
@@ -358,52 +565,55 @@ function detectLanguage() {
    INICIAR SITIO
    ========================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
 
-    /* =====================================================
-       DETECCIÓN AUTOMÁTICA
-       ===================================================== */
+        /* Idioma inicial */
 
-    const detectedLanguage = detectLanguage();
-
-
-    /*
-       Importante:
-       false significa que el idioma detectado automáticamente
-       NO se guarda como una preferencia manual.
-    */
-
-    setLanguage(
-        detectedLanguage,
-        false
-    );
+        const detectedLanguage =
+            detectLanguage();
 
 
-    /* =====================================================
-       BOTONES ES / EN
-       ===================================================== */
-
-    document.querySelectorAll("[data-language]").forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const language =
-                button.getAttribute("data-language");
+        setLanguage(
+            detectedLanguage,
+            false
+        );
 
 
-            /*
-               true = el usuario eligió manualmente
-               el idioma, por lo que sí lo guardamos.
-            */
+        /* =================================================
+           BOTONES ES / EN
+        ================================================== */
 
-            setLanguage(
-                language,
-                true
-            );
+        document
+            .querySelectorAll("[data-language]")
+            .forEach(button => {
 
-        });
 
-    });
+                button.addEventListener(
+                    "click",
+                    () => {
 
-});
+
+                        const language =
+                            button.getAttribute(
+                                "data-language"
+                            );
+
+
+                        setLanguage(
+                            language,
+                            true
+                        );
+
+
+                    }
+                );
+
+
+            });
+
+
+    }
+);
