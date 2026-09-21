@@ -98,7 +98,7 @@
 
 
 /* =========================================================
-   COLORES DE MARCA — OREJIBLANCO
+   COLORES DE MARCA
    ========================================================= */
 
 :root {
@@ -140,7 +140,7 @@ video {
 
 
 /* =========================================================
-   HERO / PANTALLA PRINCIPAL
+   HERO
    ========================================================= */
 
 .hero {
@@ -156,7 +156,7 @@ video {
 
 
 /* =========================================================
-   VIDEO DE FONDO
+   VIDEO
    ========================================================= */
 
 .hero-video {
@@ -171,7 +171,7 @@ video {
 
 
 /* =========================================================
-   CAPA SOBRE EL VIDEO
+   CAPA SOBRE VIDEO
    ========================================================= */
 
 .hero-overlay {
@@ -183,18 +183,78 @@ video {
 
 
 /* =========================================================
-   CONTENIDO DEL HERO
+   SELECTOR DE IDIOMA
+   ========================================================= */
+
+.language-selector {
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.language-selector button {
+    padding: 4px 2px;
+
+    border: none;
+    background: transparent;
+
+    color: var(--blanco);
+
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    opacity: 0.55;
+
+    transition:
+        opacity 0.3s ease,
+        color 0.3s ease;
+}
+
+.language-selector button:hover {
+    opacity: 1;
+}
+
+.language-selector button.active {
+    color: var(--amarillo);
+    opacity: 1;
+}
+
+.language-selector span {
+    color: var(--blanco);
+    opacity: 0.4;
+}
+
+
+/* =========================================================
+   CONTENIDO HERO
    ========================================================= */
 
 .hero-content {
     position: relative;
     z-index: 2;
+
     width: 100%;
     max-width: 1000px;
+
     padding: 30px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
 }
 
@@ -206,39 +266,49 @@ video {
 .hero-logo {
     width: min(420px, 70vw);
     height: auto;
+
     margin-bottom: 30px;
+
     display: block;
 }
 
 
 /* =========================================================
-   FRASE DE MARCA
+   FRASE HERO
    ========================================================= */
 
 .hero-tagline {
     max-width: 650px;
+
     margin-bottom: 50px;
+
     font-size: clamp(1rem, 2vw, 1.4rem);
     font-weight: 300;
+
     letter-spacing: 2px;
     line-height: 1.5;
 }
 
 
 /* =========================================================
-   BOTÓN / INDICADOR DE SCROLL
+   SCROLL
    ========================================================= */
 
 .scroll-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 10px;
+
     color: var(--amarillo);
+
     text-decoration: none;
+
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 2px;
+
     transition:
         color 0.3s ease,
         transform 0.3s ease;
@@ -257,24 +327,27 @@ video {
 
 
 /* =========================================================
-   SECCIÓN — NUESTRA HISTORIA
+   NUESTRA HISTORIA
    ========================================================= */
 
 .historia {
     min-height: 100vh;
+
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
+
     background-color: var(--crema);
     color: var(--negro);
 }
 
 
 /* =========================================================
-   TEXTO DE HISTORIA
+   TEXTO HISTORIA
    ========================================================= */
 
 .historia-texto {
     padding: 100px 10%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,46 +359,55 @@ video {
 
 
 /* =========================================================
-   ETIQUETA DE SECCIÓN
+   ETIQUETAS
    ========================================================= */
 
 .section-label {
     margin-bottom: 25px;
+
     color: var(--amarillo);
+
     font-size: 0.8rem;
     font-weight: 700;
+
     letter-spacing: 4px;
 }
 
 
 /* =========================================================
-   TÍTULO DE HISTORIA
+   TÍTULO HISTORIA
    ========================================================= */
 
 .historia h2 {
     margin-bottom: 35px;
+
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 900;
+
     line-height: 0.9;
+
     color: var(--verde);
 }
 
 
 /* =========================================================
-   INTRODUCCIÓN DE HISTORIA
+   INTRO HISTORIA
    ========================================================= */
 
 .historia-intro {
     max-width: 500px;
+
     margin-bottom: 30px;
+
     font-size: 1.35rem;
     font-weight: 700;
+
     line-height: 1.4;
 }
 
 
 /* =========================================================
-   CONTENIDO DE HISTORIA
+   CONTENIDO HISTORIA
    ========================================================= */
 
 .historia-contenido {
@@ -334,8 +416,10 @@ video {
 
 .historia-contenido p {
     margin-bottom: 18px;
+
     font-size: 1rem;
     font-weight: 400;
+
     line-height: 1.7;
 }
 
@@ -347,14 +431,18 @@ video {
 .historia-ubicacion {
     display: flex;
     flex-direction: column;
+
     gap: 5px;
+
     margin-top: 25px;
     padding-left: 20px;
+
     border-left: 3px solid var(--amarillo);
 }
 
 .historia-ubicacion strong {
     color: var(--verde);
+
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -364,15 +452,27 @@ video {
     font-weight: 400;
 }
 
+
+/* =========================================================
+   GOOGLE MAPS
+   ========================================================= */
+
 .maps-link {
     display: inline-block;
+
     margin-top: 14px;
+
     color: var(--dorado);
+
     font-family: 'Lato', sans-serif;
+
     font-size: 12px;
     font-weight: 700;
+
     letter-spacing: 1.5px;
+
     text-decoration: none;
+
     transition: color 0.3s ease;
 }
 
@@ -380,54 +480,69 @@ video {
     color: var(--amarillo);
 }
 
+
 /* =========================================================
-   FOTOGRAFÍA DE HISTORIA
+   IMAGEN HISTORIA
    ========================================================= */
 
 .historia-imagen {
     position: relative;
+
     min-height: 700px;
+
     overflow: hidden;
 }
 
 .historia-imagen img {
     width: 100%;
     height: 100%;
+
     min-height: 700px;
+
     object-fit: cover;
     object-position: center;
+
     display: block;
 }
 
 
 /* =========================================================
-   FRASE SOBRE LA FOTOGRAFÍA
+   FRASE SOBRE FOTO
    ========================================================= */
 
 .historia-frase {
     position: absolute;
+
     right: 8%;
     bottom: 10%;
+
     width: 90%;
     max-width: 430px;
+
     padding: 10px;
 }
 
 .historia-frase p {
     margin: 0;
+
     color: var(--blanco);
+
     font-family: 'VerandahReverie', cursive;
+
     font-size: clamp(1.5rem, 3.5vw, 3.2rem);
     font-weight: 400;
+
     line-height: 1;
+
     text-align: left;
+
     text-shadow:
         0 2px 8px rgba(0, 0, 0, 0.55);
 }
 
 
 /* =========================================================
-   SECCIÓN — QUIÉNES SOMOS
+   QUIÉNES SOMOS
    ========================================================= */
 
 .quienes-somos {
@@ -435,33 +550,28 @@ video {
     color: var(--blanco);
 }
 
-
-/* =========================================================
-   CONTENIDO
-   ========================================================= */
-
 .quienes-somos-texto {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding: 110px 8% 120px;
 }
 
-
-/* =========================================================
-   TÍTULO
-   ========================================================= */
-
 .quienes-somos h2 {
     margin-bottom: 45px;
+
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 900;
+
     line-height: 0.9;
+
     color: var(--blanco);
 }
 
 
 /* =========================================================
-   TEXTO
+   TEXTO QUIÉNES SOMOS
    ========================================================= */
 
 .quienes-somos-contenido {
@@ -479,30 +589,36 @@ video {
 
 
 /* =========================================================
-   FOTOGRAFÍA INTEGRADA EN EL TEXTO
+   FOTO INTEGRADA
    ========================================================= */
 
 .quienes-somos-foto {
     float: right;
+
     width: 38%;
+
     margin: 5px 0 30px 45px;
 }
 
 .quienes-somos-foto img {
     display: block;
+
     width: 100%;
     height: auto;
+
     border-radius: 2px;
 }
 
 
 /* =========================================================
-   INTRODUCCIÓN
+   INTRO
    ========================================================= */
 
 .quienes-somos-intro {
     margin-bottom: 30px !important;
+
     font-size: 1.25rem !important;
+
     line-height: 1.6 !important;
 }
 
@@ -513,11 +629,15 @@ video {
 
 .quienes-somos h3 {
     clear: both;
+
     margin-top: 55px;
     margin-bottom: 25px;
+
     font-size: clamp(2rem, 3.5vw, 3rem);
     font-weight: 900;
+
     line-height: 1;
+
     color: var(--amarillo);
 }
 
@@ -528,8 +648,10 @@ video {
 
 .quienes-somos-cierre {
     clear: both;
+
     margin-top: 35px;
     padding-left: 20px;
+
     border-left: 3px solid var(--amarillo);
 }
 
@@ -540,18 +662,21 @@ video {
 
 .cafe {
     min-height: 100vh;
+
     padding: 120px 10%;
+
     background-color: var(--crema);
     color: var(--negro);
 }
 
 
 /* =========================================================
-   ENCABEZADO DEL CAFÉ
+   ENCABEZADO CAFÉ
    ========================================================= */
 
 .cafe-header {
     max-width: 750px;
+
     margin-bottom: 80px;
 }
 
@@ -561,15 +686,19 @@ video {
 
 .cafe-header h2 {
     margin-bottom: 35px;
+
     font-size: clamp(2.8rem, 6vw, 5.5rem);
     font-weight: 900;
+
     line-height: 0.95;
 }
 
 .cafe-header > p:last-child {
     max-width: 620px;
+
     font-size: 1.1rem;
     font-weight: 300;
+
     line-height: 1.8;
 }
 
@@ -580,20 +709,26 @@ video {
 
 .cafe-producto {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     align-items: center;
+
     gap: 10%;
+
     max-width: 800px;
+
     margin: 0 auto;
 }
 
 
 /* =========================================================
-   IMAGEN DEL PRODUCTO
+   IMAGEN PRODUCTO
    ========================================================= */
 
 .cafe-imagen {
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -601,13 +736,15 @@ video {
 .cafe-imagen img {
     width: 100%;
     max-width: 260px;
+
     height: auto;
+
     display: block;
 }
 
 
 /* =========================================================
-   INFORMACIÓN DEL PRODUCTO
+   INFORMACIÓN PRODUCTO
    ========================================================= */
 
 .cafe-info {
@@ -616,23 +753,30 @@ video {
 
 .producto-label {
     margin-bottom: 15px;
+
     color: var(--dorado);
+
     font-size: 0.75rem;
     font-weight: 700;
+
     letter-spacing: 3px;
 }
 
 .cafe-info h3 {
     margin-bottom: 25px;
+
     font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 900;
+
     line-height: 1;
 }
 
 .producto-descripcion {
     margin-bottom: 35px;
+
     font-size: 1.05rem;
     font-weight: 300;
+
     line-height: 1.8;
 }
 
@@ -643,13 +787,17 @@ video {
 
 .presentaciones {
     display: flex;
+
     gap: 12px;
+
     margin-bottom: 40px;
 }
 
 .presentacion {
     padding: 18px 25px;
+
     border: 1px solid var(--dorado);
+
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
@@ -667,84 +815,85 @@ video {
 
 
 /* =========================================================
-   CONTACTO
-   ========================================================= */
-
-.producto-contacto {
-    padding-top: 30px;
-    border-top: 1px solid rgba(35, 31, 32, 0.2);
-}
-
-.producto-contacto p {
-    margin-bottom: 20px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-
-/* =========================================================
-   BOTONES DE CONTACTO
+   BOTONES
    ========================================================= */
 
 .botones-contacto {
     display: flex;
+
     align-items: stretch;
+
     gap: 3px;
 }
 
 .botones-contacto .boton-contacto,
 .botones-contacto .boton-whatsapp {
     min-height: 54px;
+
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
+
     background-color: var(--verde);
     color: var(--blanco);
+
     text-decoration: none;
+
     transition:
         background-color 0.3s ease,
         transform 0.3s ease;
 }
 
 
-/* Botón correo */
+/* Correo */
 
 .botones-contacto .boton-contacto {
     padding: 15px 30px;
+
     font-size: 0.8rem;
     font-weight: 700;
+
     letter-spacing: 2px;
 }
 
 
-/* Botón WhatsApp */
+/* WhatsApp */
 
 .botones-contacto .boton-whatsapp {
     gap: 12px;
+
     padding: 15px 25px;
+
     font-family: 'Lato', sans-serif;
+
     font-size: 0.8rem;
     font-weight: 700;
+
     letter-spacing: 1.5px;
+
     border: none;
 }
 
 
-/* Icono WhatsApp */
+/* Icono */
 
 .boton-whatsapp img {
     width: 22px;
     height: 22px;
+
     display: block;
 }
 
 
-/* Hover botones */
+/* Hover */
 
 .botones-contacto .boton-contacto:hover,
 .botones-contacto .boton-whatsapp:hover {
     background-color: var(--dorado);
+
     color: var(--blanco);
+
     transform: translateY(-3px);
 }
 
@@ -755,22 +904,29 @@ video {
 
 .footer {
     padding: 70px 10% 25px;
+
     background-color: var(--negro);
+
     color: var(--blanco);
 }
 
 
 /* =========================================================
-   CONTENEDOR DEL FOOTER
+   CONTENEDOR FOOTER
    ========================================================= */
 
 .footer-contenido {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     gap: 50px;
+
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding-bottom: 60px;
 }
 
@@ -781,60 +937,77 @@ video {
 
 .footer-marca {
     display: flex;
+
     flex-direction: column;
+
     gap: 15px;
 }
 
 .footer-marca img {
     width: 220px;
     height: auto;
+
     display: block;
 }
 
 .footer-marca p {
     color: var(--dorado);
+
     font-size: 0.8rem;
+
     letter-spacing: 2px;
+
     font-weight: 400;
 }
 
 
 /* =========================================================
-   CONTACTO DEL FOOTER
+   CONTACTO FOOTER
    ========================================================= */
 
 .footer-contacto {
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-end;
 }
 
 .footer-titulo {
     margin-bottom: 20px;
+
     color: var(--amarillo);
+
     font-size: 0.75rem;
     font-weight: 700;
+
     letter-spacing: 3px;
 }
 
 
 /* =========================================================
-   REDES SOCIALES
+   REDES
    ========================================================= */
 
 .footer-redes {
     display: flex;
+
     align-items: center;
+
     gap: 20px;
 }
 
 .footer-redes a {
     width: 42px;
     height: 42px;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     border: 1px solid rgba(230, 176, 64, 0.5);
+
     transition:
         background-color 0.3s ease,
         border-color 0.3s ease,
@@ -844,18 +1017,21 @@ video {
 .footer-redes img {
     width: 20px;
     height: 20px;
+
     display: block;
 }
 
 .footer-redes a:hover {
     background-color: var(--dorado);
+
     border-color: var(--dorado);
+
     transform: translateY(-3px);
 }
 
 
 /* =========================================================
-   CORREO
+   CORREO FOOTER
    ========================================================= */
 
 .footer-email {
@@ -864,9 +1040,12 @@ video {
 
 .footer-email a {
     color: var(--blanco);
+
     text-decoration: none;
+
     font-size: 0.9rem;
     font-weight: 400;
+
     transition: color 0.3s ease;
 }
 
@@ -881,21 +1060,26 @@ video {
 
 .footer-bottom {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding-top: 25px;
+
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+
     text-align: center;
 }
 
 .footer-bottom p {
     color: rgba(255, 255, 255, 0.55);
+
     font-size: 0.75rem;
     font-weight: 300;
 }
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 1024px) {
@@ -906,6 +1090,11 @@ video {
 
     .hero-logo {
         width: min(380px, 70vw);
+    }
+
+    .language-selector {
+        top: 25px;
+        right: 30px;
     }
 
     .historia-texto {
@@ -933,29 +1122,43 @@ video {
 
 
 /* =========================================================
-   RESPONSIVE — CELULAR
+   CELULAR
    ========================================================= */
 
 @media (max-width: 768px) {
 
-    /* -----------------------------------------
-       HERO
-    ----------------------------------------- */
+
+    /* HERO */
 
     .hero {
         height: 100svh;
         min-height: 550px;
     }
 
+    .language-selector {
+        top: 20px;
+        right: 20px;
+
+        font-size: 12px;
+    }
+
+    .language-selector button {
+        font-size: 12px;
+    }
+
     .hero-logo {
         width: min(300px, 75vw);
+
         margin-bottom: 25px;
     }
 
     .hero-tagline {
         max-width: 330px;
+
         margin-bottom: 40px;
+
         font-size: 1rem;
+
         letter-spacing: 1px;
     }
 
@@ -965,12 +1168,11 @@ video {
     }
 
 
-    /* -----------------------------------------
-       HISTORIA
-    ----------------------------------------- */
+    /* HISTORIA */
 
     .historia {
         display: flex;
+
         flex-direction: column;
     }
 
@@ -993,13 +1195,16 @@ video {
     .historia-imagen img {
         width: 100%;
         height: 100%;
+
         min-height: 75vh;
+
         object-position: center center;
     }
 
     .historia-frase {
         right: 7%;
         bottom: 5%;
+
         width: 90%;
         max-width: none;
     }
@@ -1009,9 +1214,7 @@ video {
     }
 
 
-    /* -----------------------------------------
-       QUIÉNES SOMOS
-    ----------------------------------------- */
+    /* QUIÉNES SOMOS */
 
     .quienes-somos-texto {
         padding: 80px 8% 90px;
@@ -1023,7 +1226,9 @@ video {
 
     .quienes-somos-foto {
         float: none;
+
         width: 75%;
+
         margin: 0 auto 35px;
     }
 
@@ -1032,9 +1237,7 @@ video {
     }
 
 
-    /* -----------------------------------------
-       CAFÉ
-    ----------------------------------------- */
+    /* CAFÉ */
 
     .cafe {
         padding: 90px 8%;
@@ -1050,6 +1253,7 @@ video {
 
     .cafe-producto {
         grid-template-columns: 1fr;
+
         gap: 60px;
     }
 
@@ -1059,6 +1263,7 @@ video {
 
     .cafe-info {
         order: 2;
+
         max-width: 100%;
     }
 
@@ -1072,18 +1277,20 @@ video {
 
     .presentacion {
         flex: 1;
+
         min-width: 80px;
+
         text-align: center;
     }
 
 
-    /* -----------------------------------------
-       BOTONES DE CONTACTO
-    ----------------------------------------- */
+    /* BOTONES */
 
     .botones-contacto {
         flex-direction: column;
+
         gap: 10px;
+
         width: 100%;
     }
 
@@ -1093,9 +1300,7 @@ video {
     }
 
 
-    /* -----------------------------------------
-       FOOTER
-    ----------------------------------------- */
+    /* FOOTER */
 
     .footer {
         padding: 60px 8% 25px;
@@ -1103,8 +1308,11 @@ video {
 
     .footer-contenido {
         flex-direction: column;
+
         align-items: center;
+
         text-align: center;
+
         padding-bottom: 30px;
     }
 
@@ -1131,13 +1339,18 @@ video {
 
 
 /* =========================================================
-   RESPONSIVE — CELULARES PEQUEÑOS
+   CELULARES PEQUEÑOS
    ========================================================= */
 
 @media (max-width: 480px) {
 
     .hero-content {
         padding: 20px;
+    }
+
+    .language-selector {
+        top: 18px;
+        right: 18px;
     }
 
     .hero-logo {
@@ -1174,5 +1387,10 @@ video {
 
     .footer-marca img {
         width: 90px;
+    }
+
+    .maps-link {
+        font-size: 11px;
+        letter-spacing: 1.2px;
     }
 }
